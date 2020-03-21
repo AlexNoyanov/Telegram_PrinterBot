@@ -107,12 +107,20 @@
       <option name="project" value="LOCAL" />
       <updated>1584819909952</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Stable built. Everything tested and database checked.">
+      <created>1584820387306</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1584820387306</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="All old code from comments deleted. Working on the new Menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="All old code from comments deleted. Working on the new Menu" />
+    <MESSAGE value="Stable built. Everything tested and database checked." />
+    <option name="LAST_COMMIT_MESSAGE" value="Stable built. Everything tested and database checked." />
   </component>
   <component name="WindowStateProjectService">
     <state x="404" y="101" key="#Main" timestamp="1581857087207">
@@ -139,30 +147,30 @@
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state x="457" y="227" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1440.826@0.23.1440.826" timestamp="1581857046952" />
-    <state x="353" y="38" key="CommitChangelistDialog2" timestamp="1584819909793">
+    <state x="353" y="38" key="CommitChangelistDialog2" timestamp="1584820386639">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
-    <state x="353" y="38" key="CommitChangelistDialog2/0.23.1440.826@0.23.1440.826" timestamp="1584819909793" />
-    <state width="1398" height="104" key="GridCell.Tab.0.bottom" timestamp="1584820138418">
+    <state x="353" y="38" key="CommitChangelistDialog2/0.23.1440.826@0.23.1440.826" timestamp="1584820386639" />
+    <state width="1398" height="104" key="GridCell.Tab.0.bottom" timestamp="1584826506306">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state width="1878" height="130" key="GridCell.Tab.0.bottom/0.23.1440.826/1440.23.1920.1057@1440.23.1920.1057" timestamp="1583966181264" />
-    <state width="1398" height="104" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1584820138418" />
-    <state width="1398" height="104" key="GridCell.Tab.0.center" timestamp="1584820138416">
+    <state width="1398" height="104" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1584826506306" />
+    <state width="1398" height="104" key="GridCell.Tab.0.center" timestamp="1584826506306">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state width="1878" height="130" key="GridCell.Tab.0.center/0.23.1440.826/1440.23.1920.1057@1440.23.1920.1057" timestamp="1583966181263" />
-    <state width="1398" height="104" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1584820138416" />
-    <state width="1398" height="104" key="GridCell.Tab.0.left" timestamp="1584820138416">
+    <state width="1398" height="104" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1584826506306" />
+    <state width="1398" height="104" key="GridCell.Tab.0.left" timestamp="1584826506305">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state width="1878" height="130" key="GridCell.Tab.0.left/0.23.1440.826/1440.23.1920.1057@1440.23.1920.1057" timestamp="1583966181262" />
-    <state width="1398" height="104" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1584820138416" />
-    <state width="1398" height="104" key="GridCell.Tab.0.right" timestamp="1584820138417">
+    <state width="1398" height="104" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1584826506305" />
+    <state width="1398" height="104" key="GridCell.Tab.0.right" timestamp="1584826506306">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state width="1878" height="130" key="GridCell.Tab.0.right/0.23.1440.826/1440.23.1920.1057@1440.23.1920.1057" timestamp="1583966181264" />
-    <state width="1398" height="104" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1584820138417" />
+    <state width="1398" height="104" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1584826506306" />
     <state width="1398" height="162" key="GridCell.Tab.1.bottom" timestamp="1583964202719">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
@@ -203,21 +211,5 @@
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state x="385" y="173" width="670" height="676" key="search.everywhere.popup/0.23.1440.826@0.23.1440.826" timestamp="1584371762878" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/alexn/TBot.java</url>
-          <line>595</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/alexn/TBot.java</url>
-          <line>606</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

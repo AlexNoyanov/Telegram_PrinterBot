@@ -49,7 +49,8 @@ public class TBot extends TelegramLongPollingBot {
         menuManager.addMenuItem("LED ON \uD83D\uDCA1 ", "ledON");
         menuManager.addMenuItem("LED OFF", "ledOFF");
 
-        menuManager.addMenuItem("FULL STOP ⛔️", "fullStop");
+        menuManager.addMenuItem("PHOTO️ \uD83D\uDCF7 ", "photo");
+        //menuManager.addMenuItem("FULL STOP ⛔️", "fullStop");
         // Some emoji for buttons:
         /*
         Settings ⚙️ 🛠
@@ -135,7 +136,6 @@ public class TBot extends TelegramLongPollingBot {
 
     // ================
 
-
     // Message Security password checker:
     SecurityChecker myPassChecker = new SecurityChecker();
 
@@ -171,7 +171,6 @@ public class TBot extends TelegramLongPollingBot {
 
         return token;
     }
-
 
     boolean isGettingPassword = false;
     String passwrdType = "";
@@ -488,28 +487,10 @@ public class TBot extends TelegramLongPollingBot {
                 if ( Objects.equals(usrCommand,"photo") ) {
                     try {
                         // Before sending the picture to the user let's ask him for the password:
-                        //int numOfTry = 3;
-                        //passwrdType = "photo";
-                        //sendPasswordMessage(update);
-                        //replyText = "https://images.pexels.com/photos/3375903/pexels-photo-3375903.jpeg";   // Photo without password
-                        //replyText = "http://192.168.1.18/photo.html";
-
-                       // replyText = "http://192.168.1.18/Photos/picture.jpg";
 
                         // Sending message to the user here:
-                        //execute(sendPhoto())
-                        //execute(send_photo(chat_id=update.getMessage().getChatId(), photo='https://telegram.org/img/t_logo.png'));
-//
-                        sendImageFromUrl("http://192.168.1.18/Photos/picture.jpg", update.getMessage().getChatId());
-                       // try {
-                            //sendPhoto(msg);          // Call method to send the photo
-                        //} catch (TelegramApiException e) {
-                        //    e.printStackTrace();
-                       // }
 
-                        //replyText = "";
-                        // Now get user's password:
-                        //isGettingPassword = true;
+                        sendImageFromUrl("http://192.168.1.18/Photos/picture.jpg", update.getMessage().getChatId());
 
                     } catch (Exception e) {
 
@@ -634,6 +615,24 @@ public class TBot extends TelegramLongPollingBot {
                 //sendPasswordMessage(update);
                 isGettingPassword = true;
                 passwrdType = "poweroff";
+            }else if(callData.equals("photo")){
+                // https://wtmqerubko.localtunnel.me//img/promocao/20180212-20180217/10.jpg
+                // http://192.168.1.18/picture.jpg
+                SendPhoto messagePhoto;
+                File file = new File("/Users/anoyanov/Work/TelegramBot-Git/TBot/src/main/java/com/alexn/picture.jpg");
+                FileInputStream fStream = null;
+                try {
+                    fStream = new FileInputStream(file);
+
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                }
+                messagePhoto = new SendPhoto().setPhoto("SomeText", fStream);
+                try {
+                    this.execute(messagePhoto);
+                } catch (TelegramApiException e) {
+                    e.printStackTrace();
+                }
             }
 
                 if (callData.equals(MenuManager.CANCEL_ACTION)) {                                  // If cancel button pressed by user
