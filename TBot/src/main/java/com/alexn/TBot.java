@@ -183,7 +183,7 @@ public class TBot extends TelegramLongPollingBot {
             List<String> lines = Files.readAllLines(Paths.get("/Users/anoyanov/Work/TBot/src/main/java/com/alexn/botInfo.txt"));
             String sqlPassword = lines.get(2);          // MySQL password (Third one in the text file)
             Connection con = DriverManager.getConnection(
-                    // "jdbc:mysql://localhost:3306/TelegramBot", "root", "alexnoyanov1999");      //here sonoo is database name, root is username and password
+                   
                     "jdbc:mysql://localhost/TelegramBot", "root", sqlPassword);
             // jdbc:mysql://localhost/db?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Europe/Moscow
             Statement stmt = con.createStatement();
