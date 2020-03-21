@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9846bb11-f451-4c5c-a986-d56e69a9d6c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" afterDir="false" />
@@ -10,11 +9,8 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/alexn/SecurityChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alexn/SecurityChecker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/alexn/TBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alexn/TBot.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +93,26 @@
       <option name="presentableId" value="Default" />
       <updated>1581854899432</updated>
     </task>
+    <task id="LOCAL-00001" summary="All old code from comments deleted. Working on the new Menu">
+      <created>1584819879299</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584819879299</updated>
+    </task>
+    <task id="LOCAL-00002" summary="All old code from comments deleted. Working on the new Menu">
+      <created>1584819909952</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1584819909952</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="All old code from comments deleted. Working on the new Menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="All old code from comments deleted. Working on the new Menu" />
   </component>
   <component name="WindowStateProjectService">
     <state x="404" y="101" key="#Main" timestamp="1581857087207">
@@ -124,30 +139,30 @@
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state x="457" y="227" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1440.826@0.23.1440.826" timestamp="1581857046952" />
-    <state x="353" y="38" key="CommitChangelistDialog2" timestamp="1584819878411">
+    <state x="353" y="38" key="CommitChangelistDialog2" timestamp="1584819909793">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
-    <state x="353" y="38" key="CommitChangelistDialog2/0.23.1440.826@0.23.1440.826" timestamp="1584819878411" />
-    <state width="1398" height="104" key="GridCell.Tab.0.bottom" timestamp="1584816202191">
+    <state x="353" y="38" key="CommitChangelistDialog2/0.23.1440.826@0.23.1440.826" timestamp="1584819909793" />
+    <state width="1398" height="104" key="GridCell.Tab.0.bottom" timestamp="1584820138418">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state width="1878" height="130" key="GridCell.Tab.0.bottom/0.23.1440.826/1440.23.1920.1057@1440.23.1920.1057" timestamp="1583966181264" />
-    <state width="1398" height="104" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1584816202191" />
-    <state width="1398" height="104" key="GridCell.Tab.0.center" timestamp="1584816202190">
+    <state width="1398" height="104" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1584820138418" />
+    <state width="1398" height="104" key="GridCell.Tab.0.center" timestamp="1584820138416">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state width="1878" height="130" key="GridCell.Tab.0.center/0.23.1440.826/1440.23.1920.1057@1440.23.1920.1057" timestamp="1583966181263" />
-    <state width="1398" height="104" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1584816202190" />
-    <state width="1398" height="104" key="GridCell.Tab.0.left" timestamp="1584816202190">
+    <state width="1398" height="104" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1584820138416" />
+    <state width="1398" height="104" key="GridCell.Tab.0.left" timestamp="1584820138416">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state width="1878" height="130" key="GridCell.Tab.0.left/0.23.1440.826/1440.23.1920.1057@1440.23.1920.1057" timestamp="1583966181262" />
-    <state width="1398" height="104" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1584816202190" />
-    <state width="1398" height="104" key="GridCell.Tab.0.right" timestamp="1584816202191">
+    <state width="1398" height="104" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1584820138416" />
+    <state width="1398" height="104" key="GridCell.Tab.0.right" timestamp="1584820138417">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state width="1878" height="130" key="GridCell.Tab.0.right/0.23.1440.826/1440.23.1920.1057@1440.23.1920.1057" timestamp="1583966181264" />
-    <state width="1398" height="104" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1584816202191" />
+    <state width="1398" height="104" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1584820138417" />
     <state width="1398" height="162" key="GridCell.Tab.1.bottom" timestamp="1583964202719">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
@@ -194,12 +209,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/alexn/TBot.java</url>
-          <line>593</line>
+          <line>595</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/alexn/TBot.java</url>
-          <line>604</line>
+          <line>606</line>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>

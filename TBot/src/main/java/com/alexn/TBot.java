@@ -210,9 +210,11 @@ public class TBot extends TelegramLongPollingBot {
         // MySQL request:
         // INSERT INTO messages(Date,ChatID,UserID,FirstName,LastName,Message) values('March 16 2020',199325184,1234,'Alexander','Noyanov', 'Test message inserted in MySQL database from terminal');
         try {
+            List<String> lines = Files.readAllLines(Paths.get("/Users/anoyanov/Work/TBot/src/main/java/com/alexn/botInfo.txt"));
+            String sqlPassword = lines.get(2);          // MySQL password (Third one in the text file)
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost/TelegramBot", "root", "alexnoyanov1999");
+                    "jdbc:mysql://localhost/TelegramBot", "root", sqlPassword);
             Statement stmt = con.createStatement();
             String request = "INSERT INTO messages(Date,ChatID,FullName,FirstName,LastName,Message) values('";
             request = request.concat(String.valueOf(date));
