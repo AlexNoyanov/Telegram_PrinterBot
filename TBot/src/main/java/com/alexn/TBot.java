@@ -198,10 +198,8 @@ public class TBot extends TelegramLongPollingBot {
             System.out.println("MySQL REQUEST:");
             System.out.println(request);
 
-            //ResultSet rs = stmt.executeQuery(request);
             int rs = stmt.executeUpdate(request);
-            //while(rs.next())
-            //    System.out.println(rs.getInt(1)+"  "+rs.getString(2)+"  "+rs.getString(3));
+
             con.close();
         } catch (Exception e) {
             System.out.println(e);
@@ -214,7 +212,6 @@ public class TBot extends TelegramLongPollingBot {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection(
-                    // "jdbc:mysql://localhost:3306/TelegramBot", "root", "alexnoyanov1999");      //here sonoo is database name, root is username and password
                     "jdbc:mysql://localhost/TelegramBot", "root", "alexnoyanov1999");
             Statement stmt = con.createStatement();
             String request = "INSERT INTO messages(Date,ChatID,FullName,FirstName,LastName,Message) values('";
@@ -234,10 +231,8 @@ public class TBot extends TelegramLongPollingBot {
             System.out.println("MySQL REQUEST:");
             System.out.println(request);
 
-            //ResultSet rs = stmt.executeQuery(request);
             int rs = stmt.executeUpdate(request);
-            //while(rs.next())
-            //    System.out.println(rs.getInt(1)+"  "+rs.getString(2)+"  "+rs.getString(3));
+
             con.close();
         } catch (Exception e) {
             System.out.println(e);
@@ -290,7 +285,7 @@ public class TBot extends TelegramLongPollingBot {
                 writer.close();
 
                 // Add user message to the MySQL database:
-                //sendMessageToDatabase(currentDateTime,usrMessage,chatID);     // Old table
+                //sendMessageToDatabase(currentDateTime,usrMessage,chatID);                     // Old table
                 sendToDatabaseMessage(currentDateTime, chatID, userFullname, userFname,userLname,usrMessage);
 
             } catch (IOException e) {
@@ -323,8 +318,7 @@ public class TBot extends TelegramLongPollingBot {
                         try {
                             // To turn ON the LED need to go : <serverPath>/cgi-bin/ledON.py
                             // Before sending the picture to the user let's ask him for the password:
-                            //int numOfTry = 3;
-                            //  sendPasswordMessage(update);
+
                             replyText = "";
                             // Now get user's password:
                             passwrdType = "ledon";
@@ -530,64 +524,7 @@ public class TBot extends TelegramLongPollingBot {
                    }catch (Exception e){
                        replyText = "error:" + e.getLocalizedMessage();
                    }
-//                        // To turn OFF the power need to go : <serverPath>/cgi-bin/powerOFF.py
-//                        final String USER_AGENT = "Mozilla/5.0";
-//                        String serverPath = "http://192.168.1.18/cgi-bin/ledOFF.py";
-//                        URL pwrOff = new URL(serverPath);
-//                        HttpURLConnection yc = (HttpURLConnection) pwrOff.openConnection();
-//                        yc.setRequestMethod("GET");
-//                        yc.setRequestProperty("User-Agent", USER_AGENT);
-//                        int responseCode = yc.getResponseCode();
-//                        if (responseCode == HttpURLConnection.HTTP_OK) { // success
-//                            BufferedReader in = new BufferedReader(new InputStreamReader(
-//                                    yc.getInputStream()));
-//                            String inputLine;
-//                            StringBuffer response = new StringBuffer();
-//
-//                            while ((inputLine = in.readLine()) != null) {
-//                                response.append(inputLine);
-//                            }
-//                            in.close();
-//
-//                            // print result
-//                            System.out.println(response.toString());
-//                        } else {
-//                            System.out.println("GET request not worked");
-//                        }
-//                    /*
-//                    // Loading image from webcam server:
-//                    Image img = null;
-//                    String serverPath = "http://192.168.1.41:8887";             // Webcam server path
-//                    String imagePath = "/Users/anoyanov/Work/TBot/Images";      // Image path
-//                    String imageName = "out.jpg";                               // Image name
-//
-//                    File fOut = new File(imagePath, imageName);
-//                    serverPath = serverPath + imageName;
-//                    // Reading image from the webcam server:
-//                    URL imageUrl = new URL(serverPath);                         // Image URL
-//
-//                    URL oracle = new URL("http://192.168.1.41:8887");
-//                    HttpURLConnection yc = (HttpURLConnection) oracle.openConnection();
-//                    yc.setRequestMethod("GET");
-//                    BufferedInputStream in = new BufferedInputStream(yc.getInputStream());
-//                    BufferedOutputStream out = new BufferedOutputStream(new FileOutputStream(fOut));
-//                    while (in.available() > 0) {
-//                        byte[] chunk = new byte[in.available()];
-//                        in.read(chunk);
-//                        out.write(chunk);
-//                    }
-////                    String inputLine;
-////                    while ((inputLine = in.readLine()) != null)
-////                        System.out.println(inputLine);
-//                    in.close();
-//                    out.close();
-//
-//                     */
-//
-//                        replyText = "command executed ok. Turned OFF";
-//                    } catch (Exception e) {
-//                        replyText = "error:" + e.getLocalizedMessage();
-//                    }
+
                 }
 
                 if (update.getMessage().getText().toLowerCase().equals("led on")) {
@@ -600,30 +537,7 @@ public class TBot extends TelegramLongPollingBot {
                         // Now get user's password:
                         passwrdType = "ledon";
                         isGettingPassword = true;
-//                        final String USER_AGENT = "Mozilla/5.0";
-//                        String serverPath = "http://192.168.1.18/cgi-bin/ledON.py";
-//                        URL pwrOff = new URL(serverPath);
-//                        HttpURLConnection yc = (HttpURLConnection) pwrOff.openConnection();
-//                        yc.setRequestMethod("GET");
-//                        yc.setRequestProperty("User-Agent", USER_AGENT);
-//                        int responseCode = yc.getResponseCode();
-//                        if (responseCode == HttpURLConnection.HTTP_OK) { // success
-//                            BufferedReader in = new BufferedReader(new InputStreamReader(
-//                                    yc.getInputStream()));
-//                            String inputLine;
-//                            StringBuffer response = new StringBuffer();
-//
-//                            while ((inputLine = in.readLine()) != null) {
-//                                response.append(inputLine);
-//                            }
-//                            in.close();
-//
-//                            // print result
-//                            System.out.println(response.toString());
-//
-//                        } else {
-//                            System.out.println("GET request not worked");
-//                        }
+
                        // replyText = "command executed ok. Turned ON";
                     } catch (Exception e) {
                         replyText = "error:" + e.getLocalizedMessage();
@@ -647,7 +561,6 @@ public class TBot extends TelegramLongPollingBot {
                     // Now get user's password:
                     passwrdType = "poweroff";
                     isGettingPassword = true;
-
                 }
 
                 // If the command is menu:
@@ -664,9 +577,6 @@ public class TBot extends TelegramLongPollingBot {
                 } catch (TelegramApiException e) {
                     e.printStackTrace();
                 }
-                //}else{
-                // If this command is not on the list:
-                // }
 
                 // MENU:    ================================================================
                 if (update.getMessage().getText().equals("/menu")) {
@@ -698,22 +608,6 @@ public class TBot extends TelegramLongPollingBot {
 
             System.out.println(callData);
 
-//                if(callData.equals("ledON")) {                            // Calling when button pressed:
-//                    isGettingPassword = true;
-//                    sendPasswordMessage(update);
-//                    sendMessageToDatabase(currentDateTime, "menu: Led ON",chatId);  // Add user's action to database
-//                    passwrdType = "ledon";
-//                    System.out.println("Menu: LED ON");
-//                } else if(callData.toLowerCase().equals("pwron")) {
-//                    isGettingPassword = true;
-//                    sendPasswordMessage(update);
-//                    passwrdType = "poweron";
-//                }else if(callData.toLowerCase().equals("pwroff")){
-//                    isGettingPassword = true;
-//                    sendPasswordMessage(update);
-//                    sendMessageToDatabase(currentDateTime, "menu: Power OFF",chatId);  // Add user's action to database
-//                    passwrdType = "poweroff";
-//                }
 
             if(callData.equals("ledON")){
                // System.out.println("=== Calling LED ON ===");
@@ -740,9 +634,9 @@ public class TBot extends TelegramLongPollingBot {
                 passwrdType = "poweroff";
             }
 
-                if (callData.equals(MenuManager.CANCEL_ACTION)) {                               // If cancel button pressed by user
+                if (callData.equals(MenuManager.CANCEL_ACTION)) {                                  // If cancel button pressed by user
                     sendMessageToDatabase(currentDateTime, "menu: Cancelled",chatId);  // Add user's action to database
-                    replaceMessageWithText(chatId, messageId, "Cancelled.");               // Send him the message with text
+                    replaceMessageWithText(chatId, messageId, "Cancelled.");                  // Send him the message with text
 
                 } else if (callData.startsWith(MenuManager.PREV_ACTION) || callData.startsWith(MenuManager.NEXT_ACTION)) {      // If next or prev button pressed
 
@@ -762,104 +656,4 @@ public class TBot extends TelegramLongPollingBot {
             }
     }
 
-    // ...
-/*
-    @Override
-    public void onUpdateReceived(Update update) {
-
-        // We check if the update has a message and the message has text
-        if (update.hasMessage() && update.getMessage().hasText()) {
-            String replyText = "I don't know the command.\nTry turn off or photo";
-            String messageText = update.getMessage().getText();
-
-            // Testing loading image the other way:
-            if(messageText.equals("img")){
-                try {
-
-                }catch (Exception e){
-                    replyText = "error:" + e.getLocalizedMessage();
-                }
-            }
-
-            if(messageText.equals("Mountain")){                     // Testing connection to the external server and sending a mountain
-                try {
-                    // Image not from the local network for testing:
-                    //String extImgURL = "https://images.pexels.com/photos/3375903/pexels-photo-3375903.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260";
-                    //String extImgURL = "https://images.pexels.com/photos/3375903/";
-                    String extImgURL = "https://images.pexels.com/photos/3375903/pexels-photo-3375903.jpeg";
-                    String imagePath = "/Users/anoyanov/Work/TBot/Images";      // Image path
-                    String imgName = "pexels-photo-3375903.jpeg";
-
-                    File imgFout = new File(imagePath, imgName);                // File for image
-
-                    //img = ImageIO.read(url);
-                    // Reading image from external server for testing:
-                    URL externalImg = new URL(extImgURL);                                           // External server URL for testing
-                    HttpURLConnection extCon = (HttpURLConnection) externalImg.openConnection();     // Opening http connection
-                    extCon.setRequestMethod("GET");                                                 // Setting request method
-                    // Now saving the image
-                    BufferedInputStream inStrm = new BufferedInputStream(extCon.getInputStream());          // Buffer input stream for reading
-                    //BufferedInputStream outStrm = new BufferedInputStream(new FileOutputStream(imgFout));   // Buffer for saving image back into the file
-                    BufferedOutputStream outStrm = new BufferedOutputStream(new FileOutputStream(imgFout));
-
-                    while (inStrm.available() > 0) {                                                         // Reading image while available
-                        byte[] chunkImg = new byte[inStrm.available()];                                        // A byte piece of image
-                        inStrm.read(chunkImg);                                                                 // Reading a part of image
-                        outStrm.write(chunkImg);                                                                // Writing it into the output stream
-                    }
-                    // And we've done here, closing all streams now:
-                    inStrm.close();
-                    outStrm.close();
-                }catch(Exception e) {
-                    replyText = "error:" + e.getLocalizedMessage();                                             // Sending error message
-                }
-            }
-
-            if(messageText.equals("turn off")) {
-                try {
-                    // Loading image from webcam server:
-                    Image img = null;
-                    String serverPath = "http://192.168.1.41:8887";             // Webcam server path
-                    String imagePath = "/Users/anoyanov/Work/TBot/Images";      // Image path
-                    String imageName = "out.jpg";                               // Image name
-
-                    File fOut = new File(imagePath, imageName);
-                    serverPath = serverPath + imageName;
-                   // Reading image from the webcam server:
-                    URL imageUrl = new URL(serverPath);                         // Image URL
-
-                    URL oracle = new URL("http://192.168.1.41:8887");
-                    HttpURLConnection yc = (HttpURLConnection)oracle.openConnection();
-                    yc.setRequestMethod("GET");
-                    BufferedInputStream in = new BufferedInputStream(yc.getInputStream());
-                    BufferedOutputStream out = new BufferedOutputStream(new FileOutputStream(fOut));
-                    while(in.available() > 0) {
-                        byte[] chunk = new byte[in.available()];
-                        in.read(chunk);
-                        out.write(chunk);
-                    }
-//                    String inputLine;
-//                    while ((inputLine = in.readLine()) != null)
-//                        System.out.println(inputLine);
-                    in.close();
-                    out.close();
-
-                    replyText = "command executed ok";
-                } catch(Exception e) {
-                    replyText = "error:" + e.getLocalizedMessage();
-                }
-            }
-            SendMessage message = new SendMessage() // Create a SendMessage object with mandatory fields
-                    .setChatId(update.getMessage().getChatId())
-                    .setText(replyText);
-            try {
-                execute(message); // Call method to send the message
-            } catch (TelegramApiException e) {
-                e.printStackTrace();
-            }
-        }
-
-
-    }
-*/
 }

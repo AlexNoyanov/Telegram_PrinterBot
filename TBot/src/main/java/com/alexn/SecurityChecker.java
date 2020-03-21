@@ -36,7 +36,7 @@ public class SecurityChecker {
     String userPassword;
     boolean isCorrect;
 
-    public SecurityChecker(){               // Constructor for initializing passwords Map
+    public SecurityChecker(){                 // Constructor for initializing passwords Map
         passwords.put("poweron", "1554");     // Putting all passwords to the Map
         passwords.put("poweroff", "1554");
         passwords.put("ledoff", "4321");
@@ -54,11 +54,7 @@ public class SecurityChecker {
     public boolean checkPasswordInput(String passType, String userPass){
         String pass = (String) passwords.get(passType);             // Finding the password for this type
         return Objects.equals(userPass,pass);
-//        if(userPass == pass){         NOT CORRECT!
-//            return true;
-//        }else{
-//            return false;
-//        }
+
     }
 
     // This method can find if the user password from class is equal to the password
@@ -73,35 +69,7 @@ public class SecurityChecker {
         isCorrect = false;
     }
 
-//    // To ask user for password:
-//    public void askForPassword(Update update){
-//        // Send the message to user:
-//        SendMessage messageText = new SendMessage() // Create a SendMessage object with mandatory fields
-//                .setChatId(update.getMessage().getChatId())
-//                .setText("Please inout password:");
-//        try {
-//            execute(messageText); // Call method to send the message
-//        } catch (TelegramApiException e) {
-//            e.printStackTrace();
-//        }
-//    }
 
-
-//    public boolean isPowerrPass(String userPass ) {   // To check the password:
-//        if (userPass == powerPas) {
-//              return true;
-//            } else {
-//              return false;
-//            }
-//        }
-//
-//    public boolean isLedPass(String userPass ) {   // To check the password:
-//        if (userPass == ledPass) {
-//            return true;
-//        } else {
-//            return false;
-//        }
-//    }
 
 
     }
