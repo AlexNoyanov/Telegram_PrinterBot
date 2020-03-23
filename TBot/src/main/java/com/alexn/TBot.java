@@ -7,9 +7,13 @@ import org.telegram.telegrambots.meta.api.methods.updatingmessages.EditMessageTe
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.InlineKeyboardMarkup;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
+import sun.awt.www.content.image.png;
 
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
 import java.io.*;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.net.URL;
 
 // For loading images:
@@ -253,6 +257,26 @@ public class TBot extends TelegramLongPollingBot {
         }
     }
 
+
+    public void sendPhotoFromUrl(String url, long chatId){
+        SendPhoto messagePhoto;
+        File file = new File("/Users/anoyanov/Work/TelegramBot-Git/TBot/src/main/java/com/alexn/picture.jpg");
+        FileInputStream fStream = null;
+        try {
+            fStream = new FileInputStream(file);
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        messagePhoto = new SendPhoto().setPhoto("SomeText", fStream);
+        messagePhoto.setChatId(chatId);
+        try {
+            this.execute(messagePhoto);
+        } catch (TelegramApiException e) {
+            e.printStackTrace();
+        }
+    }
+
     @Override
     public void onUpdateReceived(Update update) {               // When user's message is received
 
@@ -485,16 +509,17 @@ public class TBot extends TelegramLongPollingBot {
 
                 // To get photo from the camera:
                 if ( Objects.equals(usrCommand,"photo") ) {
-                    try {
-                        // Before sending the picture to the user let's ask him for the password:
-
-                        // Sending message to the user here:
-
-                        sendImageFromUrl("http://192.168.1.18/Photos/picture.jpg", update.getMessage().getChatId());
-
-                    } catch (Exception e) {
-
-                    }
+                    replyText = " ";
+//                    try {
+//                        // Before sending the picture to the user let's ask him for the password:
+//                        // Sending message to the user here:
+//                        sendImageFromUrl("http://192.168.1.18/Photos/picture.jpg", update.getMessage().getChatId());
+//
+//                    } catch (Exception e) {
+//
+//                    }
+                    // URL: "/Users/anoyanov/Work/TelegramBot-Git/TBot/src/main/java/com/alexn/picture.jpg"
+                    sendPhotoFromUrl("/Users/anoyanov/Work/TelegramBot-Git/TBot/src/main/java/com/alexn/picture.jpg", update.getMessage().getChatId());
                 }
 
                 if (update.getMessage().getText().toLowerCase().equals("led off")) {
@@ -534,9 +559,7 @@ public class TBot extends TelegramLongPollingBot {
                     passwrdType = "poweron";
 
                     isGettingPassword = true;
-
                 }
-
 
                 if (update.getMessage().getText().toLowerCase().equals("power off")) {
                     sendPasswordMessage(update);
@@ -560,6 +583,53 @@ public class TBot extends TelegramLongPollingBot {
                 } catch (TelegramApiException e) {
                     e.printStackTrace();
                 }
+
+                // ---- Secret commands here: ----
+                // photoupdate - Upload new photo
+                if(update.getMessage().getText().equals("photoupdate")){       // Load new image from the URL
+                    BufferedImage image =null;
+                    replyText = "Uploaded new photo from the URL";
+                    try{
+                        URL url = new URL("https://pixlr.com/photo/photo-shop-200108-pw.jpg");
+                                // read the url
+                                image = ImageIO.read(url);
+
+                        //for png
+                        ImageIO.write(image, "png",new File("/Users/anoyanov/Pictures/PrinterPhotos/bridge.png"));
+
+                        // for jpg
+                        ImageIO.write(image, "jpg",new File("/Users/anoyanov/Pictures/PrinterPhotos/bridge.jpg"));
+
+                    }catch(IOException e){
+                        e.printStackTrace();
+                    }
+                }
+
+                if(update.getMessage().getText().equals("photo2")){
+                        BufferedImage image = null;
+                    URL url = null;
+                    try {
+                        url = new URL("https://pixlr.com/photo/photo-shop-200108-pw.jpg");
+                    } catch (MalformedURLException e) {
+                        e.printStackTrace();
+                    }
+                    try {
+                        image = ImageIO.read(url);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+
+                    try {
+                        ImageIO.write(image, "jpg", new File("/Users/anoyanov/Pictures/PrinterPhotos/out.jpg"));
+                        ImageIO.write(image, "gif", new File("/Users/anoyanov/Pictures/PrinterPhotos/out.gif"));
+                        ImageIO.write(image, "png", new File("/Users/anoyanov/Pictures/PrinterPhotos/out.png"));
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+
+                        System.out.println("Done");
+                }
+
 
                 // MENU:    ================================================================
                 if (update.getMessage().getText().equals("/menu")) {
