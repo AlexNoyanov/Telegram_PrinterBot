@@ -611,11 +611,12 @@ public class TBot extends TelegramLongPollingBot {
                 isGettingPassword = true;
                 passwrdType = "poweron";
             }else if(callData.equals("pwrOFF")) {
-                sendMessageToDatabase(currentDateTime, "menu: POWE OFF",chatId);  // Add user's action to database
+                sendMessageToDatabase(currentDateTime, "menu: POWER OFF",chatId);  // Add user's action to database
                 //sendPasswordMessage(update);
                 isGettingPassword = true;
                 passwrdType = "poweroff";
             }else if(callData.equals("photo")){
+                sendMessageToDatabase(currentDateTime, "menu: Photo",chatId);  // Add user's action to database
                 // https://wtmqerubko.localtunnel.me//img/promocao/20180212-20180217/10.jpg
                 // http://192.168.1.18/picture.jpg
                 SendPhoto messagePhoto;
@@ -628,6 +629,7 @@ public class TBot extends TelegramLongPollingBot {
                     e.printStackTrace();
                 }
                 messagePhoto = new SendPhoto().setPhoto("SomeText", fStream);
+                messagePhoto.setChatId(chatId);
                 try {
                     this.execute(messagePhoto);
                 } catch (TelegramApiException e) {
