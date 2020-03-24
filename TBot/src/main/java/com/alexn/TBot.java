@@ -590,15 +590,15 @@ public class TBot extends TelegramLongPollingBot {
                     BufferedImage image =null;
                     replyText = "Uploaded new photo from the URL";
                     try{
-                        URL url = new URL("https://pixlr.com/photo/photo-shop-200108-pw.jpg");
+                        URL url = new URL("http://192.168.1.18/Photos/cam2-00.jpg");
                                 // read the url
                                 image = ImageIO.read(url);
 
                         //for png
-                        ImageIO.write(image, "png",new File("/Users/anoyanov/Pictures/PrinterPhotos/bridge.png"));
+                        ImageIO.write(image, "png",new File("/Users/anoyanov/Pictures/PrinterPhotos/picture00.png"));
 
                         // for jpg
-                        ImageIO.write(image, "jpg",new File("/Users/anoyanov/Pictures/PrinterPhotos/bridge.jpg"));
+                        ImageIO.write(image, "jpg",new File("/Users/anoyanov/Work/TelegramBot-Git/TBot/src/main/java/com/alexn/picture00.jpg"));
 
                     }catch(IOException e){
                         e.printStackTrace();
@@ -690,7 +690,7 @@ public class TBot extends TelegramLongPollingBot {
                 // https://wtmqerubko.localtunnel.me//img/promocao/20180212-20180217/10.jpg
                 // http://192.168.1.18/picture.jpg
                 SendPhoto messagePhoto;
-                File file = new File("/Users/anoyanov/Work/TelegramBot-Git/TBot/src/main/java/com/alexn/picture.jpg");
+                File file = new File("/Users/anoyanov/Work/TelegramBot-Git/TBot/src/main/java/com/alexn/picture00.jpg");
                 FileInputStream fStream = null;
                 try {
                     fStream = new FileInputStream(file);

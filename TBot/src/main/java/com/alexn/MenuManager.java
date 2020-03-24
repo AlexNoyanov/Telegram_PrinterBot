@@ -1,4 +1,4 @@
-// MenuManager is requared for creating menu pages for actions
+// MenuManager is required for creating menu pages for actions
 package com.alexn;
 import java.util.*;
 
