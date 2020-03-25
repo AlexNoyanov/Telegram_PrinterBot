@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9846bb11-f451-4c5c-a986-d56e69a9d6c0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/alexn/SecurityChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alexn/SecurityChecker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,9 +215,10 @@
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state x="208" y="23" width="1024" height="826" key="SettingsEditor/0.23.1440.826@0.23.1440.826" timestamp="1584175276907" />
-    <state x="399" y="268" key="com.intellij.ide.util.TipDialog" timestamp="1582481897078">
-      <screen x="0" y="23" width="1440" height="826" />
+    <state x="399" y="268" key="com.intellij.ide.util.TipDialog" timestamp="1585131808014">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
+    <state x="399" y="268" key="com.intellij.ide.util.TipDialog/0.23.1440.825@0.23.1440.825" timestamp="1585131808014" />
     <state x="399" y="268" key="com.intellij.ide.util.TipDialog/0.23.1440.826@0.23.1440.826" timestamp="1582481897078" />
     <state x="509" y="360" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584819649805">
       <screen x="0" y="23" width="1440" height="826" />
@@ -236,9 +228,10 @@
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state x="386" y="71" width="667" height="729" key="find.popup/0.23.1440.826@0.23.1440.826" timestamp="1584171744396" />
-    <state x="114" y="50" key="new project wizard" timestamp="1584795523222">
-      <screen x="0" y="23" width="1440" height="826" />
+    <state x="147" y="66" key="new project wizard" timestamp="1585133667901">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
+    <state x="147" y="66" key="new project wizard/0.23.1440.825@0.23.1440.825" timestamp="1585133667901" />
     <state x="114" y="50" key="new project wizard/0.23.1440.826@0.23.1440.826" timestamp="1584795523222" />
     <state x="385" y="173" width="670" height="676" key="search.everywhere.popup" timestamp="1584371762878">
       <screen x="0" y="23" width="1440" height="826" />
