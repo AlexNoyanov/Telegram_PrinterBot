@@ -44,11 +44,15 @@ public class SecurityChecker {
     String userPassword;
     boolean isCorrect;
 
-    public SecurityChecker() throws IOException {                 // Constructor for initializing passwords Map
+    public SecurityChecker() {                 // Constructor for initializing passwords Map
 
         // Loading all passwords from the text file actionPasswords.txt
-        List<String> lines = Files.readAllLines(Paths.get("/Users/anoyanov/Work/TBot/src/main/java/com/alexn/actionPasswords.txt"));
-        //String powerOn = lines.get(2);          // MySQL password
+        List<String> lines = null;
+        try {
+            lines = Files.readAllLines(Paths.get("/Users/anoyanov/Work/TBot/src/main/java/com/alexn/actionPasswords.txt"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
         passwords.put("poweron", lines.get(0));     // Putting all passwords to the Map
         passwords.put("poweroff", lines.get(1));

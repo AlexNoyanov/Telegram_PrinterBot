@@ -11,9 +11,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/alexn/MenuManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alexn/MenuManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/alexn/SecurityChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alexn/SecurityChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/alexn/TBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alexn/TBot.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584950889515</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Now all passwords are in the .txt file and secure.">
+      <created>1585040589155</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1585040589155</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -138,7 +143,8 @@
     <MESSAGE value="Stable built. Everything tested and database checked." />
     <MESSAGE value="Trying to send user a photo from Raspberry PI camera. Photo button added to the Menu." />
     <MESSAGE value="To upload the photo from camera added secret commands for security. Everybody can watch photo, but can't download it right from printer camera in real time." />
-    <option name="LAST_COMMIT_MESSAGE" value="To upload the photo from camera added secret commands for security. Everybody can watch photo, but can't download it right from printer camera in real time." />
+    <MESSAGE value="Now all passwords are in the .txt file and secure." />
+    <option name="LAST_COMMIT_MESSAGE" value="Now all passwords are in the .txt file and secure." />
   </component>
   <component name="WindowStateProjectService">
     <state x="404" y="101" key="#Main" timestamp="1581857087207">
@@ -169,33 +175,33 @@
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state x="457" y="227" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1440.826@0.23.1440.826" timestamp="1581857046952" />
-    <state x="353" y="38" key="CommitChangelistDialog2" timestamp="1584950888811">
+    <state x="19" y="38" key="CommitChangelistDialog2" timestamp="1585040588686">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="353" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1584950888811" />
+    <state x="19" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1585040588686" />
     <state x="353" y="38" key="CommitChangelistDialog2/0.23.1440.826@0.23.1440.826" timestamp="1584826639691" />
-    <state width="1398" height="104" key="GridCell.Tab.0.bottom" timestamp="1585002071384">
+    <state width="1398" height="104" key="GridCell.Tab.0.bottom" timestamp="1585131767213">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state width="1398" height="104" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1585002071384" />
+    <state width="1398" height="104" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1585131767213" />
     <state width="1878" height="130" key="GridCell.Tab.0.bottom/0.23.1440.826/1440.23.1920.1057@1440.23.1920.1057" timestamp="1583966181264" />
     <state width="1398" height="104" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1584826506306" />
-    <state width="1398" height="104" key="GridCell.Tab.0.center" timestamp="1585002071383">
+    <state width="1398" height="104" key="GridCell.Tab.0.center" timestamp="1585131767211">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state width="1398" height="104" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1585002071383" />
+    <state width="1398" height="104" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1585131767211" />
     <state width="1878" height="130" key="GridCell.Tab.0.center/0.23.1440.826/1440.23.1920.1057@1440.23.1920.1057" timestamp="1583966181263" />
     <state width="1398" height="104" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1584826506306" />
-    <state width="1398" height="104" key="GridCell.Tab.0.left" timestamp="1585002071383">
+    <state width="1398" height="104" key="GridCell.Tab.0.left" timestamp="1585131767210">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state width="1398" height="104" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1585002071383" />
+    <state width="1398" height="104" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1585131767210" />
     <state width="1878" height="130" key="GridCell.Tab.0.left/0.23.1440.826/1440.23.1920.1057@1440.23.1920.1057" timestamp="1583966181262" />
     <state width="1398" height="104" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1584826506305" />
-    <state width="1398" height="104" key="GridCell.Tab.0.right" timestamp="1585002071383">
+    <state width="1398" height="104" key="GridCell.Tab.0.right" timestamp="1585131767212">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state width="1398" height="104" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1585002071383" />
+    <state width="1398" height="104" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1585131767212" />
     <state width="1878" height="130" key="GridCell.Tab.0.right/0.23.1440.826/1440.23.1920.1057@1440.23.1920.1057" timestamp="1583966181264" />
     <state width="1398" height="104" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1584826506306" />
     <state width="1398" height="162" key="GridCell.Tab.1.bottom" timestamp="1583964202719">
