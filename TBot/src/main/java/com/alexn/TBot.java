@@ -277,6 +277,8 @@ public class TBot extends TelegramLongPollingBot {
         }
     }
 
+
+
     @Override
     public void onUpdateReceived(Update update) {               // When user's message is received
 
@@ -582,6 +584,14 @@ public class TBot extends TelegramLongPollingBot {
                     execute(messageText); // Call method to send the message
                 } catch (TelegramApiException e) {
                     e.printStackTrace();
+                }
+
+
+                // Testing new Keyboard buttons instead of message with menu:
+                if(update.getMessage().getText().equals("/keyboardMenu")){
+                    KeyboardButtons myKeyboard = new KeyboardButtons();
+                    myKeyboard.SendKeyboard(update);
+
                 }
 
                 // ---- Secret commands here: ----
