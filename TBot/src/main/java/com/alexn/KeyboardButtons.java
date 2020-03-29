@@ -1,5 +1,17 @@
 package com.alexn;
 
+/**
+ *      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ *      For creating keyboard with buttons
+ *
+ *      March 30 2020
+ *      By Alexander Noyanov
+ *      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ *
+ *
+ */
+
+
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMarkup;
@@ -40,6 +52,5 @@ public class KeyboardButtons {
         //message.setChatId(message.getChatId().toString());
         //message.setText(getSettingsMessage(language));
     }
-
 
 }

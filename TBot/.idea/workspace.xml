@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9846bb11-f451-4c5c-a986-d56e69a9d6c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/alexn/KeyboardButtons.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -11,7 +10,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/alexn/TBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alexn/TBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/alexn/KeyboardButtons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alexn/KeyboardButtons.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +56,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
@@ -135,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585040589155</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Working on the Keyboard with buttons menu. This new design will be better">
+      <created>1585329374814</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1585329374814</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -144,7 +150,8 @@
     <MESSAGE value="Trying to send user a photo from Raspberry PI camera. Photo button added to the Menu." />
     <MESSAGE value="To upload the photo from camera added secret commands for security. Everybody can watch photo, but can't download it right from printer camera in real time." />
     <MESSAGE value="Now all passwords are in the .txt file and secure." />
-    <option name="LAST_COMMIT_MESSAGE" value="Now all passwords are in the .txt file and secure." />
+    <MESSAGE value="Working on the Keyboard with buttons menu. This new design will be better" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on the Keyboard with buttons menu. This new design will be better" />
   </component>
   <component name="WindowStateProjectService">
     <state x="404" y="101" key="#Main" timestamp="1581857087207">
@@ -167,41 +174,42 @@
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="458" y="197" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.23.1440.825@0.23.1440.825" timestamp="1585039236719" />
-    <state x="184" y="98" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584219159895">
-      <screen x="0" y="23" width="1440" height="826" />
+    <state x="184" y="98" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585481574140">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
+    <state x="184" y="98" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.825@0.23.1440.825" timestamp="1585481574140" />
     <state x="184" y="98" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.826@0.23.1440.826" timestamp="1584219159895" />
     <state x="457" y="227" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1581857046952">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state x="457" y="227" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1440.826@0.23.1440.826" timestamp="1581857046952" />
-    <state x="19" y="38" key="CommitChangelistDialog2" timestamp="1585040588686">
+    <state x="19" y="38" key="CommitChangelistDialog2" timestamp="1585516998974">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="19" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1585040588686" />
+    <state x="19" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1585516998974" />
     <state x="353" y="38" key="CommitChangelistDialog2/0.23.1440.826@0.23.1440.826" timestamp="1584826639691" />
-    <state width="1398" height="104" key="GridCell.Tab.0.bottom" timestamp="1585131767213">
+    <state width="1398" height="104" key="GridCell.Tab.0.bottom" timestamp="1585517042050">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state width="1398" height="104" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1585131767213" />
+    <state width="1398" height="104" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1585517042050" />
     <state width="1878" height="130" key="GridCell.Tab.0.bottom/0.23.1440.826/1440.23.1920.1057@1440.23.1920.1057" timestamp="1583966181264" />
     <state width="1398" height="104" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1584826506306" />
-    <state width="1398" height="104" key="GridCell.Tab.0.center" timestamp="1585131767211">
+    <state width="1398" height="104" key="GridCell.Tab.0.center" timestamp="1585517042049">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state width="1398" height="104" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1585131767211" />
+    <state width="1398" height="104" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1585517042049" />
     <state width="1878" height="130" key="GridCell.Tab.0.center/0.23.1440.826/1440.23.1920.1057@1440.23.1920.1057" timestamp="1583966181263" />
     <state width="1398" height="104" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1584826506306" />
-    <state width="1398" height="104" key="GridCell.Tab.0.left" timestamp="1585131767210">
+    <state width="1398" height="104" key="GridCell.Tab.0.left" timestamp="1585517042049">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state width="1398" height="104" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1585131767210" />
+    <state width="1398" height="104" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1585517042049" />
     <state width="1878" height="130" key="GridCell.Tab.0.left/0.23.1440.826/1440.23.1920.1057@1440.23.1920.1057" timestamp="1583966181262" />
     <state width="1398" height="104" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1584826506305" />
-    <state width="1398" height="104" key="GridCell.Tab.0.right" timestamp="1585131767212">
+    <state width="1398" height="104" key="GridCell.Tab.0.right" timestamp="1585517042050">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state width="1398" height="104" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1585131767212" />
+    <state width="1398" height="104" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1585517042050" />
     <state width="1878" height="130" key="GridCell.Tab.0.right/0.23.1440.826/1440.23.1920.1057@1440.23.1920.1057" timestamp="1583966181264" />
     <state width="1398" height="104" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1584826506306" />
     <state width="1398" height="162" key="GridCell.Tab.1.bottom" timestamp="1583964202719">
@@ -220,9 +228,10 @@
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state width="1398" height="162" key="GridCell.Tab.1.right/0.23.1440.826@0.23.1440.826" timestamp="1583964202718" />
-    <state x="208" y="23" width="1024" height="826" key="SettingsEditor" timestamp="1584175276907">
-      <screen x="0" y="23" width="1440" height="826" />
+    <state x="208" y="23" width="1024" height="825" key="SettingsEditor" timestamp="1585481549005">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
+    <state x="208" y="23" width="1024" height="825" key="SettingsEditor/0.23.1440.825@0.23.1440.825" timestamp="1585481549005" />
     <state x="208" y="23" width="1024" height="826" key="SettingsEditor/0.23.1440.826@0.23.1440.826" timestamp="1584175276907" />
     <state x="399" y="268" key="com.intellij.ide.util.TipDialog" timestamp="1582481897078">
       <screen x="0" y="23" width="1440" height="826" />
