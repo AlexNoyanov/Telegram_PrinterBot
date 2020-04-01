@@ -534,7 +534,6 @@ public class TBot extends TelegramLongPollingBot {
                    }catch (Exception e){
                        replyText = "error:" + e.getLocalizedMessage();
                    }
-
                 }
 
                 if (update.getMessage().getText().toLowerCase().equals("led on")) {
@@ -586,12 +585,10 @@ public class TBot extends TelegramLongPollingBot {
                     e.printStackTrace();
                 }
 
-
                 // Testing new Keyboard buttons instead of message with menu:
                 if(update.getMessage().getText().equals("/keyboardMenu")){
                     KeyboardButtons myKeyboard = new KeyboardButtons();
                     myKeyboard.SendKeyboard(update);
-
                 }
 
                 // ---- Secret commands here: ----

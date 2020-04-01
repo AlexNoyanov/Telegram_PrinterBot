@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9846bb11-f451-4c5c-a986-d56e69a9d6c0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/alexn/KeyboardButtons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alexn/KeyboardButtons.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/alexn/TBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alexn/TBot.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585329374814</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Some comments about KeyboardButtons class in this project">
+      <created>1585518869284</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1585518869284</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -151,7 +154,8 @@
     <MESSAGE value="To upload the photo from camera added secret commands for security. Everybody can watch photo, but can't download it right from printer camera in real time." />
     <MESSAGE value="Now all passwords are in the .txt file and secure." />
     <MESSAGE value="Working on the Keyboard with buttons menu. This new design will be better" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on the Keyboard with buttons menu. This new design will be better" />
+    <MESSAGE value="Some comments about KeyboardButtons class in this project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some comments about KeyboardButtons class in this project" />
   </component>
   <component name="WindowStateProjectService">
     <state x="404" y="101" key="#Main" timestamp="1581857087207">
@@ -183,32 +187,36 @@
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state x="457" y="227" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1440.826@0.23.1440.826" timestamp="1581857046952" />
-    <state x="19" y="38" key="CommitChangelistDialog2" timestamp="1585516998974">
+    <state x="19" y="38" key="CommitChangelistDialog2" timestamp="1585518868731">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="19" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1585516998974" />
+    <state x="19" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1585518868731" />
     <state x="353" y="38" key="CommitChangelistDialog2/0.23.1440.826@0.23.1440.826" timestamp="1584826639691" />
-    <state width="1398" height="104" key="GridCell.Tab.0.bottom" timestamp="1585517042050">
+    <state width="1398" height="104" key="GridCell.Tab.0.bottom" timestamp="1585590252279">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
+    <state width="1398" height="104" key="GridCell.Tab.0.bottom/0.23.1440.825/1440.23.1920.1057@0.23.1440.825" timestamp="1585590252279" />
     <state width="1398" height="104" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1585517042050" />
     <state width="1878" height="130" key="GridCell.Tab.0.bottom/0.23.1440.826/1440.23.1920.1057@1440.23.1920.1057" timestamp="1583966181264" />
     <state width="1398" height="104" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1584826506306" />
-    <state width="1398" height="104" key="GridCell.Tab.0.center" timestamp="1585517042049">
+    <state width="1398" height="104" key="GridCell.Tab.0.center" timestamp="1585590252277">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
+    <state width="1398" height="104" key="GridCell.Tab.0.center/0.23.1440.825/1440.23.1920.1057@0.23.1440.825" timestamp="1585590252277" />
     <state width="1398" height="104" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1585517042049" />
     <state width="1878" height="130" key="GridCell.Tab.0.center/0.23.1440.826/1440.23.1920.1057@1440.23.1920.1057" timestamp="1583966181263" />
     <state width="1398" height="104" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1584826506306" />
-    <state width="1398" height="104" key="GridCell.Tab.0.left" timestamp="1585517042049">
+    <state width="1398" height="104" key="GridCell.Tab.0.left" timestamp="1585590252276">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
+    <state width="1398" height="104" key="GridCell.Tab.0.left/0.23.1440.825/1440.23.1920.1057@0.23.1440.825" timestamp="1585590252276" />
     <state width="1398" height="104" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1585517042049" />
     <state width="1878" height="130" key="GridCell.Tab.0.left/0.23.1440.826/1440.23.1920.1057@1440.23.1920.1057" timestamp="1583966181262" />
     <state width="1398" height="104" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1584826506305" />
-    <state width="1398" height="104" key="GridCell.Tab.0.right" timestamp="1585517042050">
+    <state width="1398" height="104" key="GridCell.Tab.0.right" timestamp="1585590252278">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
+    <state width="1398" height="104" key="GridCell.Tab.0.right/0.23.1440.825/1440.23.1920.1057@0.23.1440.825" timestamp="1585590252278" />
     <state width="1398" height="104" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1585517042050" />
     <state width="1878" height="130" key="GridCell.Tab.0.right/0.23.1440.826/1440.23.1920.1057@1440.23.1920.1057" timestamp="1583966181264" />
     <state width="1398" height="104" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1584826506306" />
