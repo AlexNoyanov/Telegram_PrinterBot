@@ -6,6 +6,11 @@ import org.telegram.telegrambots.meta.ApiContext;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
+/**
+ *
+ * PROXY: 64.90.51.244 : 29374
+ */
+
 public class Main {
 
     public static void main(String[] args) {
@@ -21,8 +26,9 @@ public class Main {
         // Select proxy type: [HTTP|SOCKS4|SOCKS5] (default: NO_PROXY)
 //        botOptions.setProxyType(DefaultBotOptions.ProxyType.SOCKS5);
 //        System.getProperties().put( "proxySet", "true" );
-//        System.getProperties().put( "socksProxyHost", "127.0.0.1" );
-//        System.getProperties().put( "socksProxyPort", "9150" );
+//        System.getProperties().put( "socksProxyHost", "36.4.84.183" );
+//        System.getProperties().put( "socksProxyPort", "30002" );
+       // System.getProperties().put( "proxySet", "false" );                // Disable proxy
 
         ApiContextInitializer.init(); // Инициализируем апи
         TelegramBotsApi botapi = new TelegramBotsApi();

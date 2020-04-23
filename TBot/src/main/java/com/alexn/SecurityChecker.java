@@ -49,7 +49,7 @@ public class SecurityChecker {
         // Loading all passwords from the text file actionPasswords.txt
         List<String> lines = null;
         try {
-            lines = Files.readAllLines(Paths.get("/Users/anoyanov/Work/TBot/src/main/java/com/alexn/actionPasswords.txt"));
+            lines = Files.readAllLines(Paths.get("/Users/anoyanov/Work/TelegramBot-Git/TBot/src/main/java/com/alexn/actionPasswords.txt"));
         } catch (IOException e) {
             e.printStackTrace();
         }
