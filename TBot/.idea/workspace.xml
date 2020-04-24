@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9846bb11-f451-4c5c-a986-d56e69a9d6c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/TBot_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/alexn/DatabaseWriter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -10,12 +10,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/alexn/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alexn/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/alexn/SecurityChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alexn/SecurityChecker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/alexn/TBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alexn/TBot.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -291,41 +286,41 @@
     </state>
     <state x="19" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1585518868731" />
     <state x="353" y="38" key="CommitChangelistDialog2/0.23.1440.826@0.23.1440.826" timestamp="1584826639691" />
-    <state width="1398" height="212" key="GridCell.Tab.0.bottom" timestamp="1587671873091">
+    <state width="1398" height="212" key="GridCell.Tab.0.bottom" timestamp="1587672673345">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state width="1398" height="178" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1587667655604" />
     <state width="1398" height="104" key="GridCell.Tab.0.bottom/0.23.1440.825/1440.23.1920.1057@0.23.1440.825" timestamp="1585590252279" />
     <state width="1398" height="104" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1585742379114" />
     <state width="1878" height="130" key="GridCell.Tab.0.bottom/0.23.1440.826/1440.23.1920.1057@1440.23.1920.1057" timestamp="1583966181264" />
-    <state width="1398" height="212" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1587671873091" />
+    <state width="1398" height="212" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1587672673345" />
     <state width="1398" height="357" key="GridCell.Tab.0.bottom/0.23.1440.827@0.23.1440.827" timestamp="1587669595647" />
-    <state width="1398" height="212" key="GridCell.Tab.0.center" timestamp="1587671873090">
+    <state width="1398" height="212" key="GridCell.Tab.0.center" timestamp="1587672673344">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state width="1398" height="178" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1587667655603" />
     <state width="1398" height="104" key="GridCell.Tab.0.center/0.23.1440.825/1440.23.1920.1057@0.23.1440.825" timestamp="1585590252277" />
     <state width="1398" height="104" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1585742379112" />
     <state width="1878" height="130" key="GridCell.Tab.0.center/0.23.1440.826/1440.23.1920.1057@1440.23.1920.1057" timestamp="1583966181263" />
-    <state width="1398" height="212" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1587671873090" />
+    <state width="1398" height="212" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1587672673344" />
     <state width="1398" height="357" key="GridCell.Tab.0.center/0.23.1440.827@0.23.1440.827" timestamp="1587669595646" />
-    <state width="1398" height="212" key="GridCell.Tab.0.left" timestamp="1587671873089">
+    <state width="1398" height="212" key="GridCell.Tab.0.left" timestamp="1587672673343">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state width="1398" height="178" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1587667655602" />
     <state width="1398" height="104" key="GridCell.Tab.0.left/0.23.1440.825/1440.23.1920.1057@0.23.1440.825" timestamp="1585590252276" />
     <state width="1398" height="104" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1585742379112" />
     <state width="1878" height="130" key="GridCell.Tab.0.left/0.23.1440.826/1440.23.1920.1057@1440.23.1920.1057" timestamp="1583966181262" />
-    <state width="1398" height="212" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1587671873089" />
+    <state width="1398" height="212" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1587672673343" />
     <state width="1398" height="357" key="GridCell.Tab.0.left/0.23.1440.827@0.23.1440.827" timestamp="1587669595646" />
-    <state width="1398" height="212" key="GridCell.Tab.0.right" timestamp="1587671873090">
+    <state width="1398" height="212" key="GridCell.Tab.0.right" timestamp="1587672673344">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state width="1398" height="178" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1587667655603" />
     <state width="1398" height="104" key="GridCell.Tab.0.right/0.23.1440.825/1440.23.1920.1057@0.23.1440.825" timestamp="1585590252278" />
     <state width="1398" height="104" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1585742379113" />
     <state width="1878" height="130" key="GridCell.Tab.0.right/0.23.1440.826/1440.23.1920.1057@1440.23.1920.1057" timestamp="1583966181264" />
-    <state width="1398" height="212" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1587671873090" />
+    <state width="1398" height="212" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1587672673344" />
     <state width="1398" height="357" key="GridCell.Tab.0.right/0.23.1440.827@0.23.1440.827" timestamp="1587669595647" />
     <state width="1398" height="356" key="GridCell.Tab.1.bottom" timestamp="1587670720022">
       <screen x="0" y="23" width="1440" height="826" />

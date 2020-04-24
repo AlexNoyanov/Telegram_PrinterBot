@@ -187,7 +187,7 @@ public class TBot extends TelegramLongPollingBot {
             String sqlPassword = lines.get(2);          // MySQL password (Third one in the text file)
             Connection con = DriverManager.getConnection(
                    
-                    "jdbc:mysql://localhost/TelegramBot", "root", sqlPassword);
+                    "jdbc:mysql://localhost/TelegramBot ?useUnicode=true&serverTimezone=UTC", "root", sqlPassword);
             // jdbc:mysql://localhost/db?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Europe/Moscow
             Statement stmt = con.createStatement();
             String request = "INSERT INTO userMessages(Date,ChatID,Message) values('";
@@ -217,7 +217,7 @@ public class TBot extends TelegramLongPollingBot {
             String sqlPassword = lines.get(2);          // MySQL password (Third one in the text file)
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost/TelegramBot", "root", sqlPassword);
+                    "jdbc:mysql://localhost/TelegramBot ?useUnicode=true&serverTimezone=UTC", "root", sqlPassword);
             Statement stmt = con.createStatement();
             String request = "INSERT INTO messages(Date,ChatID,FullName,FirstName,LastName,Message) values('";
             request = request.concat(String.valueOf(date));
