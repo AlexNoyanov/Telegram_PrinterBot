@@ -244,6 +244,7 @@ public class TBot extends TelegramLongPollingBot {
         }
     }
 
+    DatabaseWriter myWriter = new DatabaseWriter();
 
     // To take photo from URL:
     public void sendImageFromUrl(String url, Long chatId) {
