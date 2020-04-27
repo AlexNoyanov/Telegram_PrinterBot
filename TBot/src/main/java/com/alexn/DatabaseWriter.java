@@ -9,10 +9,15 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 public class DatabaseWriter {
-    public String databasePassword;
+    public String sqlPassword;
 
     public DatabaseWriter(){    // Getting database password in this class
-
+        try {
+            List<String> lines = Files.readAllLines(Paths.get("/Users/anoyanov/Work/TBot/src/main/java/com/alexn/botInfo.txt"));
+            sqlPassword = lines.get(2);          // MySQL password (Third one in the text file)
+        }catch(Exception e){
+            System.out.println("ERROR! Can't get MySQL password from the file!");
+        }
     }
 
 
