@@ -8,6 +8,14 @@ import java.sql.Statement;
 import java.time.LocalDateTime;
 import java.util.List;
 
+
+/*
+
+        This class is for communicating with MySQL database
+        Created by Alexander Noyanov, April 2020
+
+ */
+
 public class DatabaseWriter {
     public String sqlPassword;
 
@@ -20,9 +28,9 @@ public class DatabaseWriter {
         }
     }
 
-
+// To send to the new database:
     public void sendToDatabaseMessage(LocalDateTime date, long chatID, String FullName, String Fname, String Lname, String message){    // Send message to the database to the 'messages' table
-        // MySQL request:
+        // MySQL request Table <messages>:
         // INSERT INTO messages(Date,ChatID,UserID,FirstName,LastName,Message) values('March 16 2020',199325184,1234,'Alexander','Noyanov', 'Test message inserted in MySQL database from terminal');
         try {
             List<String> lines = Files.readAllLines(Paths.get("/Users/anoyanov/Work/TBot/src/main/java/com/alexn/botInfo.txt"));
@@ -55,6 +63,8 @@ public class DatabaseWriter {
             System.out.println(e);
         }
     }
+
+    // Older method for old table
 
 
 }
