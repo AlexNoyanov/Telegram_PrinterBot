@@ -222,7 +222,8 @@ public class TBot extends TelegramLongPollingBot {
 //        }
 //    }
 
-    DatabaseWriter myWriter = new DatabaseWriter();
+    // To write data from messages to the database:
+    DatabaseWriter myDatabaseWriter = new DatabaseWriter();
 
     // To take photo from URL:
     public void sendImageFromUrl(String url, Long chatId) {
@@ -235,7 +236,6 @@ public class TBot extends TelegramLongPollingBot {
             e.printStackTrace();
         }
     }
-
 
     public void sendPhotoFromUrl(String url, long chatId){
         SendPhoto messagePhoto;
@@ -256,13 +256,10 @@ public class TBot extends TelegramLongPollingBot {
         }
     }
 
-
-
     @Override
     public void onUpdateReceived(Update update) {               // When user's message is received
 
-        // For communicating with MySQL database:
-        DatabaseWriter myDatabase = new DatabaseWriter();
+        myDatabaseWriter.init(update);                                  // When new message arrived save data to the
 
         // Current date:
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
@@ -277,12 +274,6 @@ public class TBot extends TelegramLongPollingBot {
                 writer.write("Chat ID:");
                 long chatID = update.getMessage().getChatId();
 
-                // values for newer table:
-                long userID = update.getMessage().getFrom().getId();
-                String userFname = update.getMessage().getFrom().getFirstName();
-                String userLname = update.getMessage().getFrom().getLastName();
-                String userFullname = update.getMessage().getFrom().getUserName();
-
                 String usrMessage = update.getMessage().getText();
                 writer.write(String.valueOf(chatID));
                 writer.write("            Date:");
@@ -295,7 +286,9 @@ public class TBot extends TelegramLongPollingBot {
 
                 // Add user message to the MySQL database:
                 //sendMessageToDatabase(currentDateTime,usrMessage,chatID);                     // Old table
-                myDatabase.sendToDatabaseMessage(currentDateTime, chatID, userFullname, userFname,userLname,usrMessage);
+                //myDatabase.sendToDatabaseMessage(currentDateTime, chatID, userFullname, userFname,userLname,usrMessage);
+
+                myDatabaseWriter.sendMessageToDatabase(usrMessage);
 
             } catch (IOException e) {
                 e.printStackTrace();
@@ -458,7 +451,7 @@ public class TBot extends TelegramLongPollingBot {
                         replyText = "error:" + e.getLocalizedMessage();
                       }
                     }
-
+                    myDatabaseWriter.sendMessageToDatabase(replyText);
                     SendMessage messageText = new SendMessage() // Create a SendMessage object with mandatory fields
                             .setChatId(update.getMessage().getChatId())
                             .setText(replyText);
@@ -655,29 +648,31 @@ public class TBot extends TelegramLongPollingBot {
 
             if(callData.equals("ledON")){
                // System.out.println("=== Calling LED ON ===");
-                sendMessageToDatabase(currentDateTime, "menu: Led ON",chatId);  // Add user's action to database
+               // sendMessageToDatabase(currentDateTime, "menu: Led ON",chatId);  // Add user's action to database
+                myDatabaseWriter.sendToDatabaseMessage();
+                //sendToDatabaseMessage(LocalDateTime date, long chatID, String FullName, String Fname, String Lname, String message)
                 //sendPasswordMessage(update);
                 isGettingPassword = true;
                 passwrdType = "ledon";
 
             } else if(callData.equals("ledOFF")){
                // System.out.println("=== Calling LED OFF ===");
-                sendMessageToDatabase(currentDateTime, "menu: Led OFF",chatId);  // Add user's action to database
+                myDatabaseWriter.sendMessageToDatabase("menu: Led OFF");  // Add user's action to database
                 //sendPasswordMessage(update);
                 isGettingPassword = true;
                 passwrdType = "ledoff";
             } else if(callData.equals("pwrON")){
-                sendMessageToDatabase(currentDateTime, "menu: Power ON",chatId);  // Add user's action to database
+                myDatabaseWriter.sendMessageToDatabase( "menu: Power ON");  // Add user's action to database
                 //sendPasswordMessage(update);
                 isGettingPassword = true;
                 passwrdType = "poweron";
             }else if(callData.equals("pwrOFF")) {
-                sendMessageToDatabase(currentDateTime, "menu: POWER OFF",chatId);  // Add user's action to database
+                myDatabaseWriter.sendMessageToDatabase( "menu: POWER OFF");  // Add user's action to database
                 //sendPasswordMessage(update);
                 isGettingPassword = true;
                 passwrdType = "poweroff";
             }else if(callData.equals("photo")){
-                sendMessageToDatabase(currentDateTime, "menu: Photo",chatId);  // Add user's action to database
+                myDatabaseWriter.sendMessageToDatabase( "menu: Photo");  // Add user's action to database
                 // https://wtmqerubko.localtunnel.me//img/promocao/20180212-20180217/10.jpg
                 // http://192.168.1.18/picture.jpg
                 SendPhoto messagePhoto;
@@ -699,7 +694,7 @@ public class TBot extends TelegramLongPollingBot {
             }
 
                 if (callData.equals(MenuManager.CANCEL_ACTION)) {                                  // If cancel button pressed by user
-                    sendMessageToDatabase(currentDateTime, "menu: Cancelled",chatId);  // Add user's action to database
+                    myDatabaseWriter.sendMessageToDatabase( "menu: Cancelled");  // Add user's action to database
                     replaceMessageWithText(chatId, messageId, "Cancelled.");                  // Send him the message with text
 
                 } else if (callData.startsWith(MenuManager.PREV_ACTION) || callData.startsWith(MenuManager.NEXT_ACTION)) {      // If next or prev button pressed
@@ -714,6 +709,8 @@ public class TBot extends TelegramLongPollingBot {
                     InlineKeyboardBuilder builder = menuManager.createMenuForPage(Integer.parseInt(pageNum), true);
                     builder.setChatId(chatId).setText("Choose action:");
                     SendMessage message = builder.build();
+
+                    //myDatabaseWriter.sendMessageToDatabase(replyText);
 
                     replaceMessage(chatId, messageId, message);
                 }
