@@ -7,7 +7,7 @@ import org.telegram.telegrambots.meta.api.methods.updatingmessages.EditMessageTe
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.InlineKeyboardMarkup;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
-import sun.awt.www.content.image.png;
+//import sun.awt.www.content.image.png;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -17,14 +17,14 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 // For loading images:
-import java.awt.Image;
+//import java.awt.Image;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.security.GuardedObject;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
+//import java.security.GuardedObject;
+//import java.sql.Connection;
+//import java.sql.DriverManager;
+//import java.sql.ResultSet;
+//import java.sql.Statement;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
@@ -482,7 +482,7 @@ public class TBot extends TelegramLongPollingBot {
                 // Text commands code: ==========================================================
 
                 // Check if Bot get good text command:
-                //if(texCommandsList.contains(update.getMessage().getText())) {
+                if(texCommandsList.contains(update.getMessage().getText())) {
 
                 String usrCommand = update.getMessage().getText().toLowerCase();        // All user's command converting to lowercase
 
@@ -548,19 +548,11 @@ public class TBot extends TelegramLongPollingBot {
                 }
 
                 // If the command is menu:
-                if (update.getMessage().getText().equals("/menu")) {
+                if (update.getMessage().getText().equals("menu")) {
                     replyText = ""; // Don't need the reply text
                 }
 
-                // Send the message to user:
-                SendMessage messageText = new SendMessage() // Create a SendMessage object with mandatory fields
-                        .setChatId(update.getMessage().getChatId())
-                        .setText(replyText);
-                try {
-                    execute(messageText); // Call method to send the message
-                } catch (TelegramApiException e) {
-                    e.printStackTrace();
-                }
+
 
                 // Testing new Keyboard buttons instead of message with menu:
                 if(update.getMessage().getText().equals("/keyboardMenu")){
@@ -593,7 +585,7 @@ public class TBot extends TelegramLongPollingBot {
                         BufferedImage image = null;
                     URL url = null;
                     try {
-                        url = new URL("https://pixlr.com/photo/photo-shop-200108-pw.jpg");
+                        url = new URL("https://images.unsplash.com/photo-1534067783941-51c9c23ecefd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80");
                     } catch (MalformedURLException e) {
                         e.printStackTrace();
                     }
@@ -612,6 +604,17 @@ public class TBot extends TelegramLongPollingBot {
                     }
 
                         System.out.println("Done");
+
+                    // Send the message to user:
+                    SendMessage messageText = new SendMessage() // Create a SendMessage object with mandatory fields
+                            .setChatId(update.getMessage().getChatId())
+                            .setText(replyText);
+                    try {
+                        execute(messageText); // Call method to send the message
+                    } catch (TelegramApiException e) {
+                        e.printStackTrace();
+                    }
+
                 }
 
 
@@ -636,6 +639,8 @@ public class TBot extends TelegramLongPollingBot {
             }
             } else if (update.hasCallbackQuery()) {     // If user answered and pressed some button in menu:
                 // Set variables
+                System.out.println("Button pressed!");
+
                 long chatId = update.getCallbackQuery().getMessage().getChatId();           // ID of user's chat
                 String callData = update.getCallbackQuery().getData();                      // Data
                 long messageId = update.getCallbackQuery().getMessage().getMessageId();     // ID of the user's message
@@ -644,7 +649,6 @@ public class TBot extends TelegramLongPollingBot {
                 // To turn on the LED illumination of the printer:
 
             System.out.println(callData);
-
 
             if(callData.equals("ledON")){
                // System.out.println("=== Calling LED ON ===");

@@ -53,6 +53,7 @@ public class DatabaseWriter {
 
     public void init(Update update){
          userID = update.getMessage().getFrom().getId();
+         chatID = update.getMessage().getChatId();
          Fname = update.getMessage().getFrom().getFirstName();
          Lname = update.getMessage().getFrom().getLastName();
          FullName = update.getMessage().getFrom().getUserName();
@@ -136,6 +137,11 @@ public class DatabaseWriter {
             System.out.println(e);
         }
     }
+
+    // To print action to the logs table:
+        public void printLogs(String action){
+
+        }
 
     // Older method for old table
 
