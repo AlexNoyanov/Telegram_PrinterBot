@@ -9,7 +9,7 @@ import org.telegram.telegrambots.meta.api.methods.updatingmessages.EditMessageTe
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.InlineKeyboardMarkup;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
-import sun.awt.www.content.image.png;
+//import sun.awt.www.content.image.png;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -19,14 +19,14 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 // For loading images:
-import java.awt.Image;
+//import java.awt.Image;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.security.GuardedObject;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
+//import java.security.GuardedObject;
+//import java.sql.Connection;
+//import java.sql.DriverManager;
+//import java.sql.ResultSet;
+//import java.sql.Statement;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
@@ -67,26 +67,6 @@ public class TBot extends TelegramLongPollingBot {
         Show timelapse  🎞 🎬
         Random 🎲
          */
-//        menuManager.addMenuItem("Action 1", "action 1");
-//        menuManager.addMenuItem("Action 2", "action 2");
-//        menuManager.addMenuItem("Action 3", "action 3");
-//        menuManager.addMenuItem("Action 4", "action 4");
-//        menuManager.addMenuItem("Action 5", "action 5");
-//        menuManager.addMenuItem("Action 6", "action 6");
-//        menuManager.addMenuItem("Action 7", "action 7");
-//        menuManager.addMenuItem("Action 8", "action 8");
-//        menuManager.addMenuItem("Action 9", "action 9");
-//        menuManager.addMenuItem("Action 10", "action 10");
-//        menuManager.addMenuItem("Action 11", "action 11");
-//        menuManager.addMenuItem("Action 12", "action 12");
-//        menuManager.addMenuItem("Action 13", "action 13");
-//        menuManager.addMenuItem("Action 14", "action 14");
-//        menuManager.addMenuItem("Action 15", "action 15");
-//        menuManager.addMenuItem("Action 16", "action 16");
-//        menuManager.addMenuItem("Action 17", "action 17");
-//        menuManager.addMenuItem("Action 18", "action 18");
-//        menuManager.addMenuItem("Action 19", "action 19");
-//        menuManager.addMenuItem("Action 20", "action 20");
 
         menuManager.init();
     }
@@ -158,8 +138,6 @@ public class TBot extends TelegramLongPollingBot {
         // Return bot name
     }
 
-
-
     @Override
     public String getBotToken() {       // Get BOT TOKEN from the text file (Second in the file)
         //String textToken = "";
@@ -182,71 +160,72 @@ public class TBot extends TelegramLongPollingBot {
     String passwrdType = "";
 
     // To send request to MySQL database use:
-    public void sendMessageToDatabase(LocalDateTime  date, String userMessage,long chatID) {
-        try {
-            Class.forName("com.mysql.jdbc.Driver");     // To set up timezone: SET GLOBAL time_zone = '+3:00';
-            List<String> lines = Files.readAllLines(Paths.get("/Users/anoyanov/Work/TBot/src/main/java/com/alexn/botInfo.txt"));
-            String sqlPassword = lines.get(2);          // MySQL password (Third one in the text file)
-            Connection con = DriverManager.getConnection(
-                   
-                    "jdbc:mysql://localhost/TelegramBot ?useUnicode=true&serverTimezone=UTC", "root", sqlPassword);
-            // jdbc:mysql://localhost/db?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Europe/Moscow
-            Statement stmt = con.createStatement();
-            String request = "INSERT INTO userMessages(Date,ChatID,Message) values('";
-            request = request.concat(String.valueOf(date));
-            request = request.concat("', ");
-            request = request.concat( String.valueOf(chatID));
-            request = request.concat(",'");
-            request = request.concat(userMessage);
-            request = request.concat("');");
+//    public void sendMessageToDatabase(LocalDateTime  date, String userMessage,long chatID) {
+//        try {
+//            Class.forName("com.mysql.jdbc.Driver");     // To set up timezone: SET GLOBAL time_zone = '+3:00';
+//            List<String> lines = Files.readAllLines(Paths.get("/Users/anoyanov/Work/TBot/src/main/java/com/alexn/botInfo.txt"));
+//            String sqlPassword = lines.get(2);          // MySQL password (Third one in the text file)
+//            Connection con = DriverManager.getConnection(
+//
+//                    "jdbc:mysql://localhost/TelegramBot ?useUnicode=true&serverTimezone=UTC", "root", sqlPassword);
+//            // jdbc:mysql://localhost/db?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Europe/Moscow
+//            Statement stmt = con.createStatement();
+//            String request = "INSERT INTO userMessages(Date,ChatID,Message) values('";
+//            request = request.concat(String.valueOf(date));
+//            request = request.concat("', ");
+//            request = request.concat( String.valueOf(chatID));
+//            request = request.concat(",'");
+//            request = request.concat(userMessage);
+//            request = request.concat("');");
+//
+//            System.out.println("MySQL REQUEST:");
+//            System.out.println(request);
+//
+//            int rs = stmt.executeUpdate(request);
+//
+//            con.close();
+//        } catch (Exception e) {
+//            System.out.println(e);
+//        }
+//    }
 
-            System.out.println("MySQL REQUEST:");
-            System.out.println(request);
+//    public void sendToDatabaseMessage(LocalDateTime  date,long chatID, String FullName, String Fname, String Lname,String message){    // Send message to the database to the 'messages' table
+//        // MySQL request:
+//        // INSERT INTO messages(Date,ChatID,UserID,FirstName,LastName,Message) values('March 16 2020',199325184,1234,'Alexander','Noyanov', 'Test message inserted in MySQL database from terminal');
+//        try {
+//            List<String> lines = Files.readAllLines(Paths.get("/Users/anoyanov/Work/TBot/src/main/java/com/alexn/botInfo.txt"));
+//            String sqlPassword = lines.get(2);          // MySQL password (Third one in the text file)
+//            Class.forName("com.mysql.jdbc.Driver");
+//            Connection con = DriverManager.getConnection(
+//                    "jdbc:mysql://localhost/TelegramBot ?useUnicode=true&serverTimezone=UTC", "root", sqlPassword);
+//            Statement stmt = con.createStatement();
+//            String request = "INSERT INTO messages(Date,ChatID,FullName,FirstName,LastName,Message) values('";
+//            request = request.concat(String.valueOf(date));
+//            request = request.concat("', ");
+//            request = request.concat( String.valueOf(chatID));
+//            request = request.concat(", '");
+//            request = request.concat( FullName);
+//            request = request.concat("','");
+//            request = request.concat(Fname);
+//            request = request.concat("','");
+//            request = request.concat(Lname);
+//            request = request.concat("','");
+//            request = request.concat(message);
+//            request = request.concat("');");
+//
+//            System.out.println("MySQL REQUEST:");
+//            System.out.println(request);
+//
+//            int rs = stmt.executeUpdate(request);
+//
+//            con.close();
+//        } catch (Exception e) {
+//            System.out.println(e);
+//        }
+//    }
 
-            int rs = stmt.executeUpdate(request);
-
-            con.close();
-        } catch (Exception e) {
-            System.out.println(e);
-        }
-    }
-
-    public void sendToDatabaseMessage(LocalDateTime  date,long chatID, String FullName, String Fname, String Lname,String message){    // Send message to the database to the 'messages' table
-        // MySQL request:
-        // INSERT INTO messages(Date,ChatID,UserID,FirstName,LastName,Message) values('March 16 2020',199325184,1234,'Alexander','Noyanov', 'Test message inserted in MySQL database from terminal');
-        try {
-            List<String> lines = Files.readAllLines(Paths.get("/Users/anoyanov/Work/TBot/src/main/java/com/alexn/botInfo.txt"));
-            String sqlPassword = lines.get(2);          // MySQL password (Third one in the text file)
-            Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost/TelegramBot ?useUnicode=true&serverTimezone=UTC", "root", sqlPassword);
-            Statement stmt = con.createStatement();
-            String request = "INSERT INTO messages(Date,ChatID,FullName,FirstName,LastName,Message) values('";
-            request = request.concat(String.valueOf(date));
-            request = request.concat("', ");
-            request = request.concat( String.valueOf(chatID));
-            request = request.concat(", '");
-            request = request.concat( FullName);
-            request = request.concat("','");
-            request = request.concat(Fname);
-            request = request.concat("','");
-            request = request.concat(Lname);
-            request = request.concat("','");
-            request = request.concat(message);
-            request = request.concat("');");
-
-            System.out.println("MySQL REQUEST:");
-            System.out.println(request);
-
-            int rs = stmt.executeUpdate(request);
-
-            con.close();
-        } catch (Exception e) {
-            System.out.println(e);
-        }
-    }
-
-    DatabaseWriter myWriter = new DatabaseWriter();
+    // To write data from messages to the database:
+    DatabaseWriter myDatabaseWriter = new DatabaseWriter();
 
     // To take photo from URL:
     public void sendImageFromUrl(String url, Long chatId) {
@@ -259,7 +238,6 @@ public class TBot extends TelegramLongPollingBot {
             e.printStackTrace();
         }
     }
-
 
     public void sendPhotoFromUrl(String url, long chatId){
         SendPhoto messagePhoto;
@@ -280,10 +258,10 @@ public class TBot extends TelegramLongPollingBot {
         }
     }
 
-
-
     @Override
     public void onUpdateReceived(Update update) {               // When user's message is received
+
+        myDatabaseWriter.init(update);                                  // When new message arrived save data to the
 
         // Current date:
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
@@ -298,12 +276,6 @@ public class TBot extends TelegramLongPollingBot {
                 writer.write("Chat ID:");
                 long chatID = update.getMessage().getChatId();
 
-                // values for newer table:
-                long userID = update.getMessage().getFrom().getId();
-                String userFname = update.getMessage().getFrom().getFirstName();
-                String userLname = update.getMessage().getFrom().getLastName();
-                String userFullname = update.getMessage().getFrom().getUserName();
-
                 String usrMessage = update.getMessage().getText();
                 writer.write(String.valueOf(chatID));
                 writer.write("            Date:");
@@ -316,7 +288,9 @@ public class TBot extends TelegramLongPollingBot {
 
                 // Add user message to the MySQL database:
                 //sendMessageToDatabase(currentDateTime,usrMessage,chatID);                     // Old table
-                sendToDatabaseMessage(currentDateTime, chatID, userFullname, userFname,userLname,usrMessage);
+                //myDatabase.sendToDatabaseMessage(currentDateTime, chatID, userFullname, userFname,userLname,usrMessage);
+
+                myDatabaseWriter.sendMessageToDatabase(usrMessage);
 
             } catch (IOException e) {
                 e.printStackTrace();
@@ -479,7 +453,7 @@ public class TBot extends TelegramLongPollingBot {
                         replyText = "error:" + e.getLocalizedMessage();
                       }
                     }
-
+                    myDatabaseWriter.sendMessageToDatabase(replyText);
                     SendMessage messageText = new SendMessage() // Create a SendMessage object with mandatory fields
                             .setChatId(update.getMessage().getChatId())
                             .setText(replyText);
@@ -488,9 +462,6 @@ public class TBot extends TelegramLongPollingBot {
                     } catch (TelegramApiException e) {
                         e.printStackTrace();
                     }
-
-
-
 
 
 
@@ -513,7 +484,7 @@ public class TBot extends TelegramLongPollingBot {
                 // Text commands code: ==========================================================
 
                 // Check if Bot get good text command:
-                //if(texCommandsList.contains(update.getMessage().getText())) {
+                if(texCommandsList.contains(update.getMessage().getText())) {
 
                 String usrCommand = update.getMessage().getText().toLowerCase();        // All user's command converting to lowercase
 
@@ -579,19 +550,11 @@ public class TBot extends TelegramLongPollingBot {
                 }
 
                 // If the command is menu:
-                if (update.getMessage().getText().equals("/menu")) {
+                if (update.getMessage().getText().equals("menu")) {
                     replyText = ""; // Don't need the reply text
                 }
 
-                // Send the message to user:
-                SendMessage messageText = new SendMessage() // Create a SendMessage object with mandatory fields
-                        .setChatId(update.getMessage().getChatId())
-                        .setText(replyText);
-                try {
-                    execute(messageText); // Call method to send the message
-                } catch (TelegramApiException e) {
-                    e.printStackTrace();
-                }
+
 
                 // Testing new Keyboard buttons instead of message with menu:
                 if(update.getMessage().getText().equals("/keyboardMenu")){
@@ -624,7 +587,7 @@ public class TBot extends TelegramLongPollingBot {
                         BufferedImage image = null;
                     URL url = null;
                     try {
-                        url = new URL("https://pixlr.com/photo/photo-shop-200108-pw.jpg");
+                        url = new URL("https://images.unsplash.com/photo-1534067783941-51c9c23ecefd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80");
                     } catch (MalformedURLException e) {
                         e.printStackTrace();
                     }
@@ -643,6 +606,17 @@ public class TBot extends TelegramLongPollingBot {
                     }
 
                         System.out.println("Done");
+
+                    // Send the message to user:
+                    SendMessage messageText = new SendMessage() // Create a SendMessage object with mandatory fields
+                            .setChatId(update.getMessage().getChatId())
+                            .setText(replyText);
+                    try {
+                        execute(messageText); // Call method to send the message
+                    } catch (TelegramApiException e) {
+                        e.printStackTrace();
+                    }
+
                 }
 
 
@@ -667,6 +641,8 @@ public class TBot extends TelegramLongPollingBot {
             }
             } else if (update.hasCallbackQuery()) {     // If user answered and pressed some button in menu:
                 // Set variables
+                System.out.println("Button pressed!");
+
                 long chatId = update.getCallbackQuery().getMessage().getChatId();           // ID of user's chat
                 String callData = update.getCallbackQuery().getData();                      // Data
                 long messageId = update.getCallbackQuery().getMessage().getMessageId();     // ID of the user's message
@@ -676,32 +652,33 @@ public class TBot extends TelegramLongPollingBot {
 
             System.out.println(callData);
 
-
             if(callData.equals("ledON")){
                // System.out.println("=== Calling LED ON ===");
-                sendMessageToDatabase(currentDateTime, "menu: Led ON",chatId);  // Add user's action to database
+               // sendMessageToDatabase(currentDateTime, "menu: Led ON",chatId);  // Add user's action to database
+                myDatabaseWriter.sendToDatabaseMessage();
+                //sendToDatabaseMessage(LocalDateTime date, long chatID, String FullName, String Fname, String Lname, String message)
                 //sendPasswordMessage(update);
                 isGettingPassword = true;
                 passwrdType = "ledon";
 
             } else if(callData.equals("ledOFF")){
                // System.out.println("=== Calling LED OFF ===");
-                sendMessageToDatabase(currentDateTime, "menu: Led OFF",chatId);  // Add user's action to database
+                myDatabaseWriter.sendMessageToDatabase("menu: Led OFF");  // Add user's action to database
                 //sendPasswordMessage(update);
                 isGettingPassword = true;
                 passwrdType = "ledoff";
             } else if(callData.equals("pwrON")){
-                sendMessageToDatabase(currentDateTime, "menu: Power ON",chatId);  // Add user's action to database
+                myDatabaseWriter.sendMessageToDatabase( "menu: Power ON");  // Add user's action to database
                 //sendPasswordMessage(update);
                 isGettingPassword = true;
                 passwrdType = "poweron";
             }else if(callData.equals("pwrOFF")) {
-                sendMessageToDatabase(currentDateTime, "menu: POWER OFF",chatId);  // Add user's action to database
+                myDatabaseWriter.sendMessageToDatabase( "menu: POWER OFF");  // Add user's action to database
                 //sendPasswordMessage(update);
                 isGettingPassword = true;
                 passwrdType = "poweroff";
             }else if(callData.equals("photo")){
-                sendMessageToDatabase(currentDateTime, "menu: Photo",chatId);  // Add user's action to database
+                myDatabaseWriter.sendMessageToDatabase( "menu: Photo");  // Add user's action to database
                 // https://wtmqerubko.localtunnel.me//img/promocao/20180212-20180217/10.jpg
                 // http://192.168.1.18/picture.jpg
                 SendPhoto messagePhoto;
@@ -723,7 +700,7 @@ public class TBot extends TelegramLongPollingBot {
             }
 
                 if (callData.equals(MenuManager.CANCEL_ACTION)) {                                  // If cancel button pressed by user
-                    sendMessageToDatabase(currentDateTime, "menu: Cancelled",chatId);  // Add user's action to database
+                    myDatabaseWriter.sendMessageToDatabase( "menu: Cancelled");  // Add user's action to database
                     replaceMessageWithText(chatId, messageId, "Cancelled.");                  // Send him the message with text
 
                 } else if (callData.startsWith(MenuManager.PREV_ACTION) || callData.startsWith(MenuManager.NEXT_ACTION)) {      // If next or prev button pressed
@@ -738,6 +715,8 @@ public class TBot extends TelegramLongPollingBot {
                     InlineKeyboardBuilder builder = menuManager.createMenuForPage(Integer.parseInt(pageNum), true);
                     builder.setChatId(chatId).setText("Choose action:");
                     SendMessage message = builder.build();
+
+                    //myDatabaseWriter.sendMessageToDatabase(replyText);
 
                     replaceMessage(chatId, messageId, message);
                 }
