@@ -1,5 +1,7 @@
 package com.alexn;
 
+// ===== Working version of the TBot on June 26th 2020
+
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.methods.send.SendPhoto;
