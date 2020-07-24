@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="ChangeListManager">
     <list default="true" id="9846bb11-f451-4c5c-a986-d56e69a9d6c0" name="Default Changelist" comment="Some comments about KeyboardButtons class in this project">
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
@@ -11,6 +12,17 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
     </list>
+=======
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="TBot:jar" />
+      <artifact name="TBot:jar2" />
+      <artifact name="TBot:jar3" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9846bb11-f451-4c5c-a986-d56e69a9d6c0" name="Default Changelist" comment="" />
+>>>>>>> Successfull_Build
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -156,8 +168,8 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="Gradle.TBot [build]" />
       <item itemvalue="Gradle.TBot [assemble]" />
+      <item itemvalue="Gradle.TBot [build]" />
     </list>
     <recent_temporary>
       <list>
@@ -233,7 +245,18 @@
       <option name="project" value="LOCAL" />
       <updated>1585518869284</updated>
     </task>
+<<<<<<< HEAD
     <option name="localTasksCounter" value="9" />
+=======
+    <task id="LOCAL-00009" summary="Paths to the Info file changed">
+      <created>1595565485076</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1595565485076</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+>>>>>>> Successfull_Build
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -244,6 +267,7 @@
     <MESSAGE value="Now all passwords are in the .txt file and secure." />
     <MESSAGE value="Working on the Keyboard with buttons menu. This new design will be better" />
     <MESSAGE value="Some comments about KeyboardButtons class in this project" />
+<<<<<<< HEAD
     <option name="LAST_COMMIT_MESSAGE" value="Some comments about KeyboardButtons class in this project" />
   </component>
   <component name="WindowStateProjectService">
@@ -300,6 +324,58 @@
     <state width="1398" height="99" key="GridCell.Tab.0.right/0.23.1440.824@0.23.1440.824" timestamp="1593124961681" />
     <state width="1398" height="104" key="GridCell.Tab.0.right/0.23.1440.825/1440.23.1920.1057@0.23.1440.825" timestamp="1585590252278" />
     <state width="1398" height="104" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1585742379113" />
+=======
+    <MESSAGE value="Paths to the Info file changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Paths to the Info file changed" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="184" y="98" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594913918148">
+      <screen x="0" y="23" width="1440" height="824" />
+    </state>
+    <state x="184" y="82" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1587667573109" />
+    <state x="184" y="98" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.824@0.23.1440.824" timestamp="1594913918148" />
+    <state x="184" y="98" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.827@0.23.1440.827" timestamp="1587668960517" />
+    <state x="457" y="226" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1594900576958">
+      <screen x="0" y="23" width="1440" height="824" />
+    </state>
+    <state x="457" y="222" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1440.900@0.0.1440.900" timestamp="1587590586124" />
+    <state x="457" y="226" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1440.824@0.23.1440.824" timestamp="1594900576958" />
+    <state x="494" y="301" width="451" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1593953452068">
+      <screen x="0" y="23" width="1440" height="824" />
+    </state>
+    <state x="494" y="301" width="451" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1440.824@0.23.1440.824" timestamp="1593953452068" />
+    <state x="19" y="38" key="CommitChangelistDialog2" timestamp="1595565483648">
+      <screen x="0" y="23" width="1440" height="824" />
+    </state>
+    <state x="19" y="38" key="CommitChangelistDialog2/0.23.1440.824@0.23.1440.824" timestamp="1595565483648" />
+    <state x="19" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1587761971585" />
+    <state width="1398" height="120" key="GridCell.Tab.0.bottom" timestamp="1595567023047">
+      <screen x="0" y="23" width="1440" height="824" />
+    </state>
+    <state width="1398" height="178" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1587667655604" />
+    <state width="1398" height="120" key="GridCell.Tab.0.bottom/0.23.1440.824@0.23.1440.824" timestamp="1595567023047" />
+    <state width="1398" height="212" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1587672673345" />
+    <state width="1398" height="357" key="GridCell.Tab.0.bottom/0.23.1440.827@0.23.1440.827" timestamp="1587669595647" />
+    <state width="1398" height="120" key="GridCell.Tab.0.center" timestamp="1595567022988">
+      <screen x="0" y="23" width="1440" height="824" />
+    </state>
+    <state width="1398" height="178" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1587667655603" />
+    <state width="1398" height="120" key="GridCell.Tab.0.center/0.23.1440.824@0.23.1440.824" timestamp="1595567022988" />
+    <state width="1398" height="212" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1587672673344" />
+    <state width="1398" height="357" key="GridCell.Tab.0.center/0.23.1440.827@0.23.1440.827" timestamp="1587669595646" />
+    <state width="1398" height="120" key="GridCell.Tab.0.left" timestamp="1595567022915">
+      <screen x="0" y="23" width="1440" height="824" />
+    </state>
+    <state width="1398" height="178" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1587667655602" />
+    <state width="1398" height="120" key="GridCell.Tab.0.left/0.23.1440.824@0.23.1440.824" timestamp="1595567022915" />
+    <state width="1398" height="212" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1587672673343" />
+    <state width="1398" height="357" key="GridCell.Tab.0.left/0.23.1440.827@0.23.1440.827" timestamp="1587669595646" />
+    <state width="1398" height="120" key="GridCell.Tab.0.right" timestamp="1595567023044">
+      <screen x="0" y="23" width="1440" height="824" />
+    </state>
+    <state width="1398" height="178" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1587667655603" />
+    <state width="1398" height="120" key="GridCell.Tab.0.right/0.23.1440.824@0.23.1440.824" timestamp="1595567023044" />
+>>>>>>> Successfull_Build
     <state width="1398" height="212" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1587672673344" />
     <state width="1398" height="357" key="GridCell.Tab.0.right/0.23.1440.827@0.23.1440.827" timestamp="1587669595647" />
     <state width="1398" height="356" key="GridCell.Tab.1.bottom" timestamp="1587670720022">
@@ -322,6 +398,7 @@
     </state>
     <state width="1398" height="356" key="GridCell.Tab.1.right/0.23.1440.826@0.23.1440.826" timestamp="1587670720021" />
     <state width="1398" height="357" key="GridCell.Tab.1.right/0.23.1440.827@0.23.1440.827" timestamp="1587669595648" />
+<<<<<<< HEAD
     <state x="208" y="23" width="1024" height="830" key="SettingsEditor" timestamp="1587667566384">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -330,19 +407,23 @@
     <state x="399" y="268" key="com.intellij.ide.util.TipDialog" timestamp="1587668894771">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
+=======
+    <state x="208" y="23" width="1024" height="824" key="SettingsEditor" timestamp="1594907468756">
+      <screen x="0" y="23" width="1440" height="824" />
+    </state>
+    <state x="208" y="23" width="1024" height="830" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1587667566384" />
+    <state x="208" y="23" width="1024" height="824" key="SettingsEditor/0.23.1440.824@0.23.1440.824" timestamp="1594907468756" />
+    <state x="399" y="267" key="com.intellij.ide.util.TipDialog" timestamp="1594900036916">
+      <screen x="0" y="23" width="1440" height="824" />
+    </state>
+    <state x="399" y="267" key="com.intellij.ide.util.TipDialog/0.23.1440.824@0.23.1440.824" timestamp="1594900036916" />
+>>>>>>> Successfull_Build
     <state x="399" y="268" key="com.intellij.ide.util.TipDialog/0.23.1440.827@0.23.1440.827" timestamp="1587668894771" />
-    <state x="509" y="360" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584819649805">
-      <screen x="0" y="23" width="1440" height="826" />
-    </state>
-    <state x="509" y="360" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.826@0.23.1440.826" timestamp="1584819649805" />
-    <state x="114" y="50" key="new project wizard" timestamp="1584795523222">
-      <screen x="0" y="23" width="1440" height="826" />
-    </state>
-    <state x="114" y="50" key="new project wizard/0.23.1440.826@0.23.1440.826" timestamp="1584795523222" />
     <state x="385" y="198" key="run.anything.popup" timestamp="1587670186068">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state x="385" y="198" key="run.anything.popup/0.23.1440.826@0.23.1440.826" timestamp="1587670186068" />
+<<<<<<< HEAD
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -359,6 +440,8 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+=======
+>>>>>>> Successfull_Build
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TBot$Main.ic" NAME="Main Coverage Results" MODIFIED="1587671726130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
