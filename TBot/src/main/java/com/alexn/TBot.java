@@ -145,11 +145,14 @@ public class TBot extends TelegramLongPollingBot {
     // Message Security password checker:
     SecurityChecker myPassChecker = new SecurityChecker();
 
+    // Paths for all files:
+    String infoPath = "/Users/anoyanov/Work/TBot/src/main/java/com/alexn/botInfo.txt";
+
     @Override
     public String getBotUsername() {
         List<String> lines = null;
         try {
-            lines = Files.readAllLines(Paths.get("/Users/anoyanov/Work/TBot/src/main/java/com/alexn/botInfo.txt"));
+            lines = Files.readAllLines(Paths.get(infoPath));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -165,7 +168,7 @@ public class TBot extends TelegramLongPollingBot {
         //String textToken = "";
         String token ="";
         try {
-            List<String> lines = Files.readAllLines(Paths.get("/Users/anoyanov/Work/TBot/src/main/java/com/alexn/botInfo.txt"));
+            List<String> lines = Files.readAllLines(Paths.get(infoPath));
 //            for(String str : lines){
 //                System.out.println(str);
 //            }
@@ -185,7 +188,7 @@ public class TBot extends TelegramLongPollingBot {
     public void sendMessageToDatabase(LocalDateTime  date, String userMessage,long chatID) {
         try {
             Class.forName("com.mysql.jdbc.Driver");     // To set up timezone: SET GLOBAL time_zone = '+3:00';
-            List<String> lines = Files.readAllLines(Paths.get("/Users/anoyanov/Work/TBot/src/main/java/com/alexn/botInfo.txt"));
+            List<String> lines = Files.readAllLines(Paths.get(infoPath));
             String sqlPassword = lines.get(2);          // MySQL password (Third one in the text file)
             Connection con = DriverManager.getConnection(
                    
@@ -215,7 +218,7 @@ public class TBot extends TelegramLongPollingBot {
         // MySQL request:
         // INSERT INTO messages(Date,ChatID,UserID,FirstName,LastName,Message) values('March 16 2020',199325184,1234,'Alexander','Noyanov', 'Test message inserted in MySQL database from terminal');
         try {
-            List<String> lines = Files.readAllLines(Paths.get("/Users/anoyanov/Work/TBot/src/main/java/com/alexn/botInfo.txt"));
+            List<String> lines = Files.readAllLines(Paths.get(infoPath));
             String sqlPassword = lines.get(2);          // MySQL password (Third one in the text file)
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection(
