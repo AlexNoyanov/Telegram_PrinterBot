@@ -1,5 +1,7 @@
 package com.alexn;
 
+import org.telegram.telegrambots.meta.api.objects.Update;
+
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.sql.Connection;
@@ -7,6 +9,18 @@ import java.sql.DriverManager;
 import java.sql.Statement;
 import java.time.LocalDateTime;
 import java.util.List;
+
+
+/**
+ *      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ *      DatabaseWriter to send all data from Bot to the database
+ *
+ *      Branch: DatabaseWriter
+ *
+ *      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ *
+ *
+ */
 
 public class DatabaseWriter {
     public String sqlPassword;
@@ -64,7 +78,6 @@ public class DatabaseWriter {
     }
 
 
-
     // To send request to MySQL database use:
     public void sendMessageToDatabase(LocalDateTime  date, String userMessage,long chatID) {
         try {
@@ -95,6 +108,24 @@ public class DatabaseWriter {
         }
     }
 
+
+    // Insert User's data into UserData table:
+    public void insertUserData(Update messageUpdate){
+        long chatId = messageUpdate.getMessage().getChatId();
+        String fullName = messageUpdate.getMessage().getForwardSenderName();
+        String userMessage = messageUpdate.getMessage().getText();
+
+        System.out.print("--- User ");
+        System.out.print(fullName);
+
+        System.out.print(" In chat ");
+        System.out.print(chatId);
+
+        System.out.print("                  Send text:  ");
+        System.out.print(userMessage);
+
+
+    }
 
 
 }
