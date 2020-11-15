@@ -115,6 +115,8 @@ public class DatabaseWriter {
         String fullName = messageUpdate.getMessage().getForwardSenderName();
         String userMessage = messageUpdate.getMessage().getText();
 
+        // INSERT INTO UsersData
+
         System.out.print("--- User ");
         System.out.print(fullName);
 
@@ -123,6 +125,8 @@ public class DatabaseWriter {
 
         System.out.print("                  Send text:  ");
         System.out.print(userMessage);
+
+
 
 
     }
