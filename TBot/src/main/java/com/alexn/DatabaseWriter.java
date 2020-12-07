@@ -39,7 +39,7 @@ public class DatabaseWriter {
 
     public void sendToDatabaseMessage(LocalDateTime date, long chatID, String FullName, String Fname, String Lname, String message){    // Send message to the database to the 'messages' table
         // MySQL request:
-        // INSERT INTO messages(Date,ChatID,UserID,FirstName,LastName,Message) values('March 16 2020',199325184,1234,'Alexander','Noyanov', 'Test message inserted in MySQL database from terminal');
+        // INSERT INTO allMessages(Date,ChatID,UserID,FirstName,LastName,Message) values('March 16 2020',199325184,1234,'Alexander','Noyanov', 'Test message inserted in MySQL database from terminal');
         try {
             List<String> lines = Files.readAllLines(Paths.get(infoPath));
             String sqlPassword = lines.get(2);          // MySQL password (Third one in the text file)
@@ -47,7 +47,7 @@ public class DatabaseWriter {
             Connection con = DriverManager.getConnection(
                     "jdbc:mysql://localhost/TelegramBot ?useUnicode=true&serverTimezone=UTC", "root", sqlPassword);
             Statement stmt = con.createStatement();
-            String request = "INSERT INTO messages(Date,ChatID,FullName,FirstName,LastName,Message) values('";
+            String request = "INSERT INTO allMessages(Date,ChatID,FullName,FirstName,LastName,Message) values('";
             request = request.concat(String.valueOf(date));
             request = request.concat("', ");
             request = request.concat( String.valueOf(chatID));
@@ -125,10 +125,6 @@ public class DatabaseWriter {
 
         System.out.print("                  Send text:  ");
         System.out.print(userMessage);
-
-
-
-
     }
 
 
