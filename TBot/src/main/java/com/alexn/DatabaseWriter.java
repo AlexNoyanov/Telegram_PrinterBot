@@ -17,6 +17,10 @@ import java.util.List;
  *
  *      Branch: DatabaseWriter
  *
+ *
+ *      Tables:
+ *
+ *
  *      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  *
  *
@@ -36,9 +40,26 @@ public class DatabaseWriter {
         }
     }
 
+    // Send request to MySQL database:
+    private void mySQLRequest(String request){
+        try{
+            List<String> lines = Files.readAllLines(Paths.get(infoPath));
+            String sqlPassword = lines.get(2);          // MySQL password (Third one in the text file botinfo.txt)
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection con = DriverManager.getConnection(
+                    "jdbc:mysql://localhost/TelegramBot ?useUnicode=true&serverTimezone=UTC", "root", sqlPassword);
+            Statement stmt = con.createStatement();
+            int rs = stmt.executeUpdate(request);
+            con.close();
+
+        }catch (Exception e){
+            System.out.print("==== MySQL REQUEST ERROR! ====");
+            System.out.println(e);
+        }
+    }
 
     public void sendToDatabaseMessage(LocalDateTime date, long chatID, String FullName, String Fname, String Lname, String message){    // Send message to the database to the 'messages' table
-        // MySQL request:
+        // MySQL request: table allMessages
         // INSERT INTO allMessages(Date,ChatID,UserID,FirstName,LastName,Message) values('March 16 2020',199325184,1234,'Alexander','Noyanov', 'Test message inserted in MySQL database from terminal');
         try {
             List<String> lines = Files.readAllLines(Paths.get(infoPath));
@@ -109,13 +130,14 @@ public class DatabaseWriter {
     }
 
 
-    // Insert User's data into UserData table:
+    // Insert User's data into UsersData table:
     public void insertUserData(Update messageUpdate){
+        // INSERT INTO UsersData(FullName,FirstName,LastName,ChatID) values("AlexNoyanov","Alexander","Noyanov",0000000);
+
         long chatId = messageUpdate.getMessage().getChatId();
         String fullName = messageUpdate.getMessage().getForwardSenderName();
         String userMessage = messageUpdate.getMessage().getText();
 
-        // INSERT INTO UsersData
 
         System.out.print("--- User ");
         System.out.print(fullName);
