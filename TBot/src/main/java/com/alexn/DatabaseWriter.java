@@ -62,12 +62,12 @@ public class DatabaseWriter {
         // MySQL request: table allMessages
         // INSERT INTO allMessages(Date,ChatID,UserID,FirstName,LastName,Message) values('March 16 2020',199325184,1234,'Alexander','Noyanov', 'Test message inserted in MySQL database from terminal');
         try {
-            List<String> lines = Files.readAllLines(Paths.get(infoPath));
-            String sqlPassword = lines.get(2);          // MySQL password (Third one in the text file)
-            Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost/TelegramBot ?useUnicode=true&serverTimezone=UTC", "root", sqlPassword);
-            Statement stmt = con.createStatement();
+//            List<String> lines = Files.readAllLines(Paths.get(infoPath));
+//            String sqlPassword = lines.get(2);          // MySQL password (Third one in the text file)
+//            Class.forName("com.mysql.jdbc.Driver");
+//            Connection con = DriverManager.getConnection(
+//                    "jdbc:mysql://localhost/TelegramBot ?useUnicode=true&serverTimezone=UTC", "root", sqlPassword);
+//            Statement stmt = con.createStatement();
             String request = "INSERT INTO allMessages(Date,ChatID,FullName,FirstName,LastName,Message) values('";
             request = request.concat(String.valueOf(date));
             request = request.concat("', ");
@@ -85,9 +85,11 @@ public class DatabaseWriter {
             System.out.println("MySQL REQUEST:");
             System.out.println(request);
 
-            int rs = stmt.executeUpdate(request);
+            mySQLRequest(request);
 
-            con.close();
+//            int rs = stmt.executeUpdate(request);
+//
+//            con.close();
         } catch (Exception e) {
             System.out.println(e);
         }
@@ -102,16 +104,16 @@ public class DatabaseWriter {
     // To send request to MySQL database use:
     public void sendMessageToDatabase(LocalDateTime  date, String userMessage,long chatID) {
         try {
-            Class.forName("com.mysql.jdbc.Driver");     // To set up timezone: SET GLOBAL time_zone = '+3:00';
-            List<String> lines = Files.readAllLines(Paths.get(infoPath));
-            String sqlPassword = lines.get(2);          // MySQL password (Third one in the text file)
-            Connection con = DriverManager.getConnection(
-
-                    "jdbc:mysql://localhost/TelegramBot ?useUnicode=true&serverTimezone=UTC", "root", sqlPassword);
-            // jdbc:mysql://localhost/db?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Europe/Moscow
-            Statement stmt = con.createStatement();
-            String request = "INSERT INTO userMessages(Date,ChatID,Message) values('";
-            request = request.concat(String.valueOf(date));
+//            Class.forName("com.mysql.jdbc.Driver");     // To set up timezone: SET GLOBAL time_zone = '+3:00';
+//            List<String> lines = Files.readAllLsages(Date,ChatID,Message) values('";
+//            request = request.concat(String.valueines(Paths.get(infoPath));
+//            String sqlPassword = lines.get(2);          // MySQL password (Third one in the text file)
+//            Connection con = DriverManager.getConnection(
+//
+//                    "jdbc:mysql://localhost/TelegramBot ?useUnicode=true&serverTimezone=UTC", "root", sqlPassword);
+//            // jdbc:mysql://localhost/db?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Europe/Moscow
+//            Statement stmt = con.createStatement();
+            String request = "INSERT INTO userMesOf(date))";
             request = request.concat("', ");
             request = request.concat( String.valueOf(chatID));
             request = request.concat(",'");
@@ -121,9 +123,11 @@ public class DatabaseWriter {
             System.out.println("MySQL REQUEST:");
             System.out.println(request);
 
-            int rs = stmt.executeUpdate(request);
+            mySQLRequest(request);
 
-            con.close();
+//            int rs = stmt.executeUpdate(request);
+//
+//            con.close();
         } catch (Exception e) {
             System.out.println(e);
         }
@@ -137,7 +141,8 @@ public class DatabaseWriter {
         long chatId = messageUpdate.getMessage().getChatId();
         String fullName = messageUpdate.getMessage().getForwardSenderName();
         String userMessage = messageUpdate.getMessage().getText();
-
+        String userFname = messageUpdate.getMessage().getFrom().getFirstName();
+        String userLname = messageUpdate.getMessage().getFrom().getLastName();
 
         System.out.print("--- User ");
         System.out.print(fullName);
@@ -147,6 +152,14 @@ public class DatabaseWriter {
 
         System.out.print("                  Send text:  ");
         System.out.print(userMessage);
+
+        String request = "INSERT INTO UsersData(FullName,FirstName,LastName) values('";
+        request = request.concat(fullName);
+        request = request.concat("','");
+        request = request.concat(userFname);
+        request = request.concat("','");
+        request = request.concat(userLname);
+        request = request.concat("';");
     }
 
 
