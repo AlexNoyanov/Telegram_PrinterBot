@@ -11,6 +11,12 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/alexn/DatabaseWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alexn/DatabaseWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/alexn/TBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alexn/TBot.java" afterDir="false" />
+>>>>>>> DatabaseWriter
     </list>
 =======
   <component name="ArtifactsWorkspaceSettings">
@@ -329,6 +335,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="Paths to the Info file changed" />
   </component>
   <component name="WindowStateProjectService">
+<<<<<<< HEAD
     <state x="184" y="98" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594913918148">
       <screen x="0" y="23" width="1440" height="824" />
     </state>
@@ -442,6 +449,47 @@
     </breakpoint-manager>
 =======
 >>>>>>> Successfull_Build
+=======
+    <state width="1398" height="221" key="GridCell.Tab.0.bottom" timestamp="1609011535722">
+      <screen x="0" y="23" width="1440" height="824" />
+    </state>
+    <state width="1398" height="221" key="GridCell.Tab.0.bottom/0.23.1440.824@0.23.1440.824" timestamp="1609011535722" />
+    <state width="1398" height="119" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1606825978688" />
+    <state width="1398" height="119" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1606764894512" />
+    <state width="1398" height="119" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1607065460403" />
+    <state width="1398" height="221" key="GridCell.Tab.0.center" timestamp="1609011535721">
+      <screen x="0" y="23" width="1440" height="824" />
+    </state>
+    <state width="1398" height="221" key="GridCell.Tab.0.center/0.23.1440.824@0.23.1440.824" timestamp="1609011535721" />
+    <state width="1398" height="119" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1606825978687" />
+    <state width="1398" height="119" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1606764894511" />
+    <state width="1398" height="119" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1607065460402" />
+    <state width="1398" height="221" key="GridCell.Tab.0.left" timestamp="1609011535721">
+      <screen x="0" y="23" width="1440" height="824" />
+    </state>
+    <state width="1398" height="221" key="GridCell.Tab.0.left/0.23.1440.824@0.23.1440.824" timestamp="1609011535721" />
+    <state width="1398" height="119" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1606825978687" />
+    <state width="1398" height="119" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1606764894510" />
+    <state width="1398" height="119" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1607065460401" />
+    <state width="1398" height="221" key="GridCell.Tab.0.right" timestamp="1609011535722">
+      <screen x="0" y="23" width="1440" height="824" />
+    </state>
+    <state width="1398" height="221" key="GridCell.Tab.0.right/0.23.1440.824@0.23.1440.824" timestamp="1609011535722" />
+    <state width="1398" height="119" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1606825978688" />
+    <state width="1398" height="119" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1606764894511" />
+    <state width="1398" height="119" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1607065460402" />
+    <state x="399" y="267" key="com.intellij.ide.util.TipDialog" timestamp="1608716756320">
+      <screen x="0" y="23" width="1440" height="824" />
+    </state>
+    <state x="399" y="267" key="com.intellij.ide.util.TipDialog/0.23.1440.824@0.23.1440.824" timestamp="1608716756320" />
+    <state x="399" y="267" key="com.intellij.ide.util.TipDialog/0.23.1440.825@0.23.1440.825" timestamp="1607355167065" />
+    <state x="399" y="268" key="com.intellij.ide.util.TipDialog/0.23.1440.826/1440.23.1920.1057@0.23.1440.826" timestamp="1606467398850" />
+    <state x="399" y="268" key="com.intellij.ide.util.TipDialog/0.23.1440.828@0.23.1440.828" timestamp="1607328078869" />
+    <state x="385" y="171" width="670" height="676" key="search.everywhere.popup" timestamp="1609102676489">
+      <screen x="0" y="23" width="1440" height="824" />
+    </state>
+    <state x="385" y="171" width="670" height="676" key="search.everywhere.popup/0.23.1440.824@0.23.1440.824" timestamp="1609102676489" />
+>>>>>>> DatabaseWriter
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TBot$Main.ic" NAME="Main Coverage Results" MODIFIED="1587671726130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

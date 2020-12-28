@@ -147,6 +147,10 @@ public class TBot extends TelegramLongPollingBot {
 
     // Paths for all files:
     String infoPath = "/Users/anoyanov/Work/TBot/src/main/java/com/alexn/botInfo.txt";
+    String filePath = "/Users/anoyanov/Work/TelegramBot-Git/TBot/src/main/java/com/alexn/picture.jpg";
+    String pictureFolder = "/Users/anoyanov/Work/TelegramBot-Git/TBot/src/main/java/com/alexn/picture.jpg";
+    String picturePath = "/Users/anoyanov/Work/TelegramBot-Git/TBot/src/main/java/com/alexn/picture00.jpg";
+    String usersMessagesPath = "/Users/anoyanov/Work/TBot/src/main/java/com/alexn/usersMessages.txt";
 
     @Override
     public String getBotUsername() {
@@ -160,7 +164,6 @@ public class TBot extends TelegramLongPollingBot {
         return botName;
         // Return bot name
     }
-
 
     @Override
     public String getBotToken() {       // Get BOT TOKEN from the text file (Second in the file)
@@ -265,7 +268,7 @@ public class TBot extends TelegramLongPollingBot {
 
     public void sendPhotoFromUrl(String url, long chatId){
         SendPhoto messagePhoto;
-        File file = new File("/Users/anoyanov/Work/TelegramBot-Git/TBot/src/main/java/com/alexn/picture.jpg");
+        File file = new File(filePath);
         FileInputStream fStream = null;
         try {
             fStream = new FileInputStream(file);
@@ -294,7 +297,7 @@ public class TBot extends TelegramLongPollingBot {
 
             // Printing user's input to the text file:
             try {
-                FileWriter writer = new FileWriter("/Users/anoyanov/Work/TBot/src/main/java/com/alexn/usersMessages.txt", true);        // Log file path
+                FileWriter writer = new FileWriter(usersMessagesPath, true);        // Log file path
                 writer.write("Chat ID:");
                 long chatID = update.getMessage().getChatId();
 
@@ -525,7 +528,7 @@ public class TBot extends TelegramLongPollingBot {
 //
 //                    }
                     // URL: "/Users/anoyanov/Work/TelegramBot-Git/TBot/src/main/java/com/alexn/picture.jpg"
-                    sendPhotoFromUrl("/Users/anoyanov/Work/TelegramBot-Git/TBot/src/main/java/com/alexn/picture.jpg", update.getMessage().getChatId());
+                    sendPhotoFromUrl(pictureFolder, update.getMessage().getChatId());
                 }
 
                 if (update.getMessage().getText().toLowerCase().equals("led off")) {
@@ -606,10 +609,10 @@ public class TBot extends TelegramLongPollingBot {
                                 image = ImageIO.read(url);
 
                         //for png
-                        ImageIO.write(image, "png",new File("/Users/anoyanov/Pictures/PrinterPhotos/picture00.png"));
+                        ImageIO.write(image, "png",new File(picturePath));
 
                         // for jpg
-                        ImageIO.write(image, "jpg",new File("/Users/anoyanov/Work/TelegramBot-Git/TBot/src/main/java/com/alexn/picture00.jpg"));
+                        ImageIO.write(image, "jpg",new File(picturePath));
 
                     }catch(IOException e){
                         e.printStackTrace();
@@ -640,7 +643,6 @@ public class TBot extends TelegramLongPollingBot {
 
                         System.out.println("Done");
                 }
-
 
                 // MENU:    ================================================================
                 if (update.getMessage().getText().equals("/menu")) {
@@ -701,7 +703,7 @@ public class TBot extends TelegramLongPollingBot {
                 // https://wtmqerubko.localtunnel.me//img/promocao/20180212-20180217/10.jpg
                 // http://192.168.1.18/picture.jpg
                 SendPhoto messagePhoto;
-                File file = new File("/Users/anoyanov/Work/TelegramBot-Git/TBot/src/main/java/com/alexn/picture00.jpg");
+                File file = new File(picturePath);
                 FileInputStream fStream = null;
                 try {
                     fStream = new FileInputStream(file);
